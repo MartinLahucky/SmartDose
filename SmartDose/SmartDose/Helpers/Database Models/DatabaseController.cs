@@ -137,5 +137,9 @@ namespace SmartDose.Helpers.Database_Models
         {
             return await database.Table<HeparinTable>().ToArrayAsync();
         }
+        public async Task<HeparinTableAPTT[]> GetHeparrinConstantsAPTT()
+        {
+            return await database.Table<HeparinTableAPTT>().ToArrayAsync();
+        }
     }
 }
