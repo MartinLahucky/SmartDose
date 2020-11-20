@@ -10,6 +10,31 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Xamarin.Forms" Version="4.4.0.991640"/>
+        <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
+        <PackageReference Include="Xamarin.Forms" Version="4.4.0.991640" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Helpers\Resources\AppResource.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>AppResource.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Helpers\Resources\AppResource.cs-CZ.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>AppResource.cs-CZ.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Helpers\Resources\AppResource.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>AppResource.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Helpers\Resources\AppResource.cs-CZ.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>AppResource.cs-CZ.resx</DependentUpon>
+      </Compile>
     </ItemGroup>
 </Project>

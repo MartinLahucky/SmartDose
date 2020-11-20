@@ -1,9 +1,10 @@
-﻿using Android.App;
+﻿using System.IO;
+using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
-
+using Environment = System.Environment;
 namespace SmartDose.Android
 {
     [Activity(Label = "SmartDose", Theme = "@style/MainTheme", MainLauncher = true,
@@ -17,7 +18,10 @@ namespace SmartDose.Android
 
             base.OnCreate(savedInstanceState);
             Forms.Init(this, savedInstanceState);
-            LoadApplication(new App());
+            
+            // Database Declaration
+            string fullPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "smartdose_db.sqlite");
+            LoadApplication(new App(fullPath));
         }
     }
 }
