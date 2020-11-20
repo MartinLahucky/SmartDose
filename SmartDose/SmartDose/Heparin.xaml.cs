@@ -1,4 +1,6 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using SmartDose.Helpers.Database_Models;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace SmartDose
@@ -11,19 +13,22 @@ namespace SmartDose
             InitializeComponent();
         }
 
-        private void WeightEntry_OnTextChanged(object sender, TextChangedEventArgs e)
+        private async void CalculateButton_OnClicked(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
-        }
+            int id = 0;
+            int m = int.Parse(WeightEntry.Text);
+            float currentA = float.Parse(CurrentApttrEntry.Text);
+            float targetA = float.Parse(TargetApttrEntry.Text);
+            HeparinTable[] Tab = await App.Database.GetHeparrinConstants();
+            HeparinTableAPTT[] Aptt = await App.Database.GetHeparrinConstantsAPTT();
 
-        private void CurrentApttrEntry_OnTextChanged(object sender, TextChangedEventArgs e)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        private void TargetApttrEntry_OnTextChanged(object sender, TextChangedEventArgs e)
-        {
-            throw new System.NotImplementedException();
+            while (Tab[id].Weight < m)
+            {
+                id++;
+            }
+            
+            Console.WriteLine("Toto je hmotnost: " + m.ToString());
+            Console.WriteLine("Toto je index: " + Tab[id].Weight.ToString());
         }
     }
 }

@@ -27,7 +27,7 @@ namespace SmartDose
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage())
+            MainPage = new NavigationPage(new Heparin())
             {
                 BarTextColor = Color.FromHex("#FFFFFF"),
             };

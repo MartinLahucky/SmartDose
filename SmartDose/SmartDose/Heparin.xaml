@@ -6,6 +6,16 @@
     
     <ContentPage.Content>
         <StackLayout>
+            
+            <Entry x:Name="WeightEntry"
+                   Placeholder="EnterWeight"
+                   Keyboard="Numeric"
+                   FontSize="20"
+                   HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"
+                   HeightRequest="80"/>
+            <Button x:Name="CalculateButton" Text="Calculate" Clicked="CalculateButton_OnClicked"/>
+            
             <!-- weight card -->
             <Frame BackgroundColor="#444444"
                    Padding="20,20"
@@ -21,14 +31,7 @@
                            VerticalOptions="EndAndExpand"
                            HorizontalOptions="FillAndExpand">
                         <StackLayout Orientation="Horizontal">
-                            <Entry x:Name="WeightEntry"
-                                   TextChanged="WeightEntry_OnTextChanged"
-                                   Placeholder="EnterWeight"
-                                   Keyboard="Numeric"
-                                   FontSize="20"
-                                   HorizontalOptions="CenterAndExpand"
-                                   HorizontalTextAlignment="Center"
-                                   HeightRequest="80"/>
+                       
                             <Frame HorizontalOptions="EndAndExpand" BackgroundColor="#DDDDDD" Margin="0">
                                 <Label Text="kg" FontSize="20" VerticalOptions="Center"/>
                             </Frame>
@@ -52,7 +55,6 @@
                            VerticalOptions="EndAndExpand"
                            HorizontalOptions="FillAndExpand">
                         <Entry x:Name="CurrentApttrEntry"
-                               TextChanged="CurrentApttrEntry_OnTextChanged"
                                Placeholder="Enter Current APTTr"
                                Keyboard="Numeric"
                                FontSize="20"
@@ -78,7 +80,6 @@
                            VerticalOptions="EndAndExpand"
                            HorizontalOptions="FillAndExpand">
                         <Entry x:Name="TargetApttrEntry"
-                               TextChanged="TargetApttrEntry_OnTextChanged" 
                                Placeholder="EnterTarget ATTPr"
                                Keyboard="Numeric"
                                FontSize="20"
@@ -140,8 +141,6 @@
                     </StackLayout>
                 </Frame>
             </StackLayout>
-            
-            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

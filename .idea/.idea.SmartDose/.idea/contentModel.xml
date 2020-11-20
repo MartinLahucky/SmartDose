@@ -46,8 +46,6 @@
         </e>
         <e p="Heparin.xaml" t="Include" />
         <e p="Heparin.xaml.cs" t="Include" />
-        <e p="MainPage.xaml" t="Include" />
-        <e p="MainPage.xaml.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netstandard2.0" t="Include">
