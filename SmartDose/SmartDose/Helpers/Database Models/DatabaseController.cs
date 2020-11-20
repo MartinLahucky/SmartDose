@@ -30,6 +30,20 @@ namespace SmartDose.Helpers.Database_Models
                 SpeedPlus4 = speedPlus4;
             }
         }
+
+        public class HeparinRowAPTT
+        {
+            public float APPT { get; private set; }
+            public int Bolus { get; private set; }
+            public int DeltaSpeed { get; private set; }
+
+            public HeparinRowAPTT(float appt, int bolus, int deltaSpeed)
+            {
+                APPT = appt;
+                Bolus = bolus;
+                DeltaSpeed = deltaSpeed;
+            }
+        }
         public DatabaseController()
         {
             database = new SQLiteAsyncConnection(App.DatabaseLocation);
@@ -40,6 +54,9 @@ namespace SmartDose.Helpers.Database_Models
                 {
                     HeparinTable tableConstatns = new HeparinTable();
                     await database.InsertAsync(tableConstatns);
+
+                    HeparinTable tableConstatnsAPTT = new HeparinTable();
+                    await database.InsertAsync(tableConstatnsAPTT);
                     
                     SQLiteConnection connection = new SQLiteConnection(App.DatabaseLocation);
 
@@ -89,6 +106,29 @@ namespace SmartDose.Helpers.Database_Models
                         connection.Insert(insert);
                     }
                     connection.Close();
+                    
+                    SQLiteConnection connectionAPTT = new SQLiteConnection(App.DatabaseLocation);
+                    connectionAPTT.CreateTable<HeparinRowAPTT>();
+                    
+                    List<HeparinRowAPTT> rowsAptt = new List<HeparinRowAPTT>
+                    {
+                        new HeparinRowAPTT(1.2f, 80, 4),
+                        new HeparinRowAPTT(1.5f,40,2),
+                        new HeparinRowAPTT(2.3f,0,0),
+                        new HeparinRowAPTT(3,0,-2),
+                        new HeparinRowAPTT(3,0,0)
+                    };
+                    foreach (var rowAptt in rowsAptt)
+                    {
+                        HeparinTableAPTT insert = new HeparinTableAPTT
+                        {
+                            APTTR = rowAptt.APPT,
+                            Bolus = rowAptt.Bolus,
+                            DeltaSpeed = rowAptt.DeltaSpeed
+                        }; 
+                        connectionAPTT.Insert(insert);
+                    }
+                    connectionAPTT.Close();
                 }
             });
             Task.WaitAll(task);
