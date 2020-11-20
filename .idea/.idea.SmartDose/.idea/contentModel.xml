@@ -52,9 +52,10 @@
               <e p="App.xaml.g.cs" t="Include" />
               <e p="Helpers" t="Include">
                 <e p="Styles" t="Include">
-                  <e p="Komponenty.css.g.cs" t="Include" />
+                  <e p="Components.css.g.cs" t="Include" />
                 </e>
               </e>
+              <e p="Heparin.xaml.g.cs" t="Include" />
               <e p="MainPage.xaml.g.cs" t="Include" />
               <e p="SmartDose.AssemblyInfo.cs" t="Include" />
             </e>

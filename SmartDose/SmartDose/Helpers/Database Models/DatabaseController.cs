@@ -48,18 +48,15 @@ namespace SmartDose.Helpers.Database_Models
         {
             database = new SQLiteAsyncConnection(App.DatabaseLocation);
             database.CreateTableAsync<HeparinTable>().Wait();
-            Task task = Task.Run(async () =>
+            Task createHeparinTable = Task.Run(async () =>
             {
                 if (await database.Table<HeparinTable>().CountAsync() == 0)
                 {
                     HeparinTable tableConstatns = new HeparinTable();
                     await database.InsertAsync(tableConstatns);
-
-                    HeparinTable tableConstatnsAPTT = new HeparinTable();
-                    await database.InsertAsync(tableConstatnsAPTT);
-                    
+            
                     SQLiteConnection connection = new SQLiteConnection(App.DatabaseLocation);
-
+            
                     connection.CreateTable<HeparinTable>();
                     List<HeparinRow> rows = new List<HeparinRow>
                     {
@@ -106,11 +103,21 @@ namespace SmartDose.Helpers.Database_Models
                         connection.Insert(insert);
                     }
                     connection.Close();
+                }
+            });
+            Task.WaitAll(createHeparinTable);
+
+            database.CreateTableAsync<HeparinTableAPTT>().Wait();
+            Task createHeparinTableAptt = Task.Run(async () =>
+            {
+                if (await database.Table<HeparinTableAPTT>().CountAsync() == 0)
+                {
+                    HeparinTableAPTT tableConstatnsAptt = new HeparinTableAPTT();
+                    await database.InsertAsync(tableConstatnsAptt);
                     
-                    SQLiteConnection connectionAPTT = new SQLiteConnection(App.DatabaseLocation);
-                    connectionAPTT.CreateTable<HeparinRowAPTT>();
-                    
-                    List<HeparinRowAPTT> rowsAptt = new List<HeparinRowAPTT>
+                    SQLiteConnection connection = new SQLiteConnection(App.DatabaseLocation);
+                    connection.CreateTable<HeparinTable>();
+                    List<HeparinRowAPTT> rows = new List<HeparinRowAPTT>
                     {
                         new HeparinRowAPTT(1.2f, 80, 4),
                         new HeparinRowAPTT(1.5f,40,2),
@@ -118,20 +125,22 @@ namespace SmartDose.Helpers.Database_Models
                         new HeparinRowAPTT(3,0,-2),
                         new HeparinRowAPTT(3,0,0)
                     };
-                    foreach (var rowAptt in rowsAptt)
+                    foreach (var row in rows)
                     {
                         HeparinTableAPTT insert = new HeparinTableAPTT
                         {
-                            APTTR = rowAptt.APPT,
-                            Bolus = rowAptt.Bolus,
-                            DeltaSpeed = rowAptt.DeltaSpeed
+                            APTTR = row.APPT,
+                            Bolus = row.Bolus,
+                            DeltaSpeed = row.DeltaSpeed
                         }; 
-                        connectionAPTT.Insert(insert);
+                        connection.Insert(insert);
                     }
-                    connectionAPTT.Close();
+                    connection.Close();
                 }
             });
-            Task.WaitAll(task);
+            Task.WaitAll(createHeparinTableAptt);
+
+
         }
         public async Task<HeparinTable[]> GetHeparrinConstants()
         {
