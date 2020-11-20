@@ -1,4 +1,5 @@
-﻿using SmartDose.Helpers.Database_Models;
+﻿using System;
+using SmartDose.Helpers.Database_Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -22,7 +23,7 @@ namespace SmartDose
                 return database;
             }
         }
-        public App(string databaseLocation)
+        public App(String databaseLocation)
         {
             InitializeComponent();
 
