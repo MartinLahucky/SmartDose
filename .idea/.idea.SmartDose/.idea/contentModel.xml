@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Microsoft\Xamarin\NuGet\xamarin.android.arch.lifecycle.runtime\1.1.1.3\proguard\monoandroid90\proguard.txt" t="Include" />
+    <e p="C:\Microsoft\Xamarin\NuGet\xamarin.android.arch.lifecycle.viewmodel\1.1.1.3\proguard\monoandroid90\proguard.txt" t="Include" />
+    <e p="C:\Microsoft\Xamarin\NuGet\xamarin.android.support.animated.vector.drawable\28.0.0.3\proguard\monoandroid90\proguard.txt" t="Include" />
+    <e p="C:\Microsoft\Xamarin\NuGet\xamarin.android.support.compat\28.0.0.3\proguard\monoandroid90\proguard.txt" t="Include" />
+    <e p="C:\Microsoft\Xamarin\NuGet\xamarin.android.support.coordinaterlayout\28.0.0.3\proguard\monoandroid90\proguard.txt" t="Include" />
+    <e p="C:\Microsoft\Xamarin\NuGet\xamarin.android.support.design\28.0.0.3\proguard\monoandroid90\proguard.txt" t="Include" />
+    <e p="C:\Microsoft\Xamarin\NuGet\xamarin.android.support.media.compat\28.0.0.3\proguard\monoandroid90\proguard.txt" t="Include" />
+    <e p="C:\Microsoft\Xamarin\NuGet\xamarin.android.support.transition\28.0.0.3\proguard\monoandroid90\proguard.txt" t="Include" />
+    <e p="C:\Microsoft\Xamarin\NuGet\xamarin.android.support.v7.appcompat\28.0.0.3\proguard\monoandroid90\proguard.txt" t="Include" />
+    <e p="C:\Microsoft\Xamarin\NuGet\xamarin.android.support.v7.recyclerview\28.0.0.3\proguard\monoandroid90\proguard.txt" t="Include" />
+    <e p="C:\Microsoft\Xamarin\NuGet\xamarin.android.support.versionedparcelable\28.0.0.3\proguard\monoandroid90" t="Include">
+      <e p="proguard.txt" t="Include" />
+    </e>
+    <e p="C:\Program Files (x86)\Android\android-sdk\platforms\android-29\data\res" t="IncludeRecursive" />
+    <e p="C:\Program Files (x86)\Android\android-sdk\sources\android-29" t="IncludeRecursive" />
+    <e p="C:\Users\Honza\.nuget\packages\xamarin.forms\4.4.0.991640\build\MonoAndroid10" t="Include">
+      <e p="proguard.cfg" t="Include" />
+    </e>
+    <e p="C:\Users\Honza\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Honza\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_SmartDose.-1990300037.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Honza\RiderProjects\SmartDose" t="IncludeFlat">
+      <e p=".git\info\exclude" t="IncludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="SmartDose\SmartDose" t="IncludeRecursive">
+        <e p="App.xaml" t="Include" />
+        <e p="App.xaml.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Helpers" t="Include">
+          <e p="Database Models" t="Include">
+            <e p="DatabaseController.cs" t="Include" />
+            <e p="HeparinTable.cs" t="Include" />
+            <e p="HeparinTableAPTT.cs" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="AppResource.cs-CZ.Designer.cs" t="Include" />
+            <e p="AppResource.cs-CZ.resx" t="Include" />
+            <e p="AppResource.Designer.cs" t="Include" />
+            <e p="AppResource.resx" t="Include" />
+          </e>
+          <e p="Styles" t="Include">
+            <e p="Components.css" t="Include" />
+          </e>
+        </e>
+        <e p="Heparin.xaml" t="Include" />
+        <e p="Heparin.xaml.cs" t="Include" />
+        <e p="MainPage.xaml" t="Include" />
+        <e p="MainPage.xaml.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="App.xaml.g.cs" t="Include" />
+              <e p="Helpers" t="Include">
+                <e p="Styles" t="Include">
+                  <e p="Components.css.g.cs" t="Include" />
+                </e>
+              </e>
+              <e p="MainPage.xaml.g.cs" t="Include" />
+              <e p="SmartDose.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="SmartDose.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="SmartDose\SmartDose.Android" t="IncludeRecursive">
+        <e p="Assets" t="Include">
+          <e p="AboutAssets.txt" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="MainActivity.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="100" t="Include">
+              <e p="designtime" t="Include">
+                <e p="Resource.designer.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Properties" t="Include">
+          <e p="AndroidManifest.xml" t="Include" />
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="AboutResources.txt" t="Include" />
+          <e p="layout" t="Include">
+            <e p="Tabbar.axml" t="Include" />
+            <e p="Toolbar.axml" t="Include" />
+          </e>
+          <e p="values" t="Include">
+            <e p="colors.xml" t="Include" />
+            <e p="styles.xml" t="Include" />
+          </e>
+        </e>
+        <e p="SmartDose.Android.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="SmartDose\SmartDose.iOS" t="IncludeRecursive">
+        <e p="AppDelegate.cs" t="Include" />
+        <e p="Assets.xcassets" t="Include">
+          <e p="AppIcon.appiconset" t="Include">
+            <e p="Contents.json" t="Include" />
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Entitlements.plist" t="Include" />
+        <e p="Info.plist" t="Include" />
+        <e p="Main.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="LaunchScreen.storyboard" t="Include" />
+        </e>
+        <e p="SmartDose.iOS.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="SmartDose.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>
