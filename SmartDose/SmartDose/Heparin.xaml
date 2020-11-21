@@ -39,7 +39,7 @@
                       HeightRequest="60"/>
                
                  <!-- current speed -->
-               <Entry x:Name="CurrentSpeedEntry"
+               <Entry x:Name="CurrentRateEntry"
                       Placeholder="Current Speed"
                       Keyboard="Numeric"
                       FontSize="20"
@@ -57,7 +57,7 @@
                       HeightRequest="60"/>
                
                  <!-- volume -->
-               <Entry x:Name="Volume"
+               <Entry x:Name="VolumeEntry"
                       Placeholder="Volume"
                       Keyboard="Numeric"
                       FontSize="20"
