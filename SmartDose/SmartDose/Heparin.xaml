@@ -7,71 +7,73 @@
     <ContentPage.Content>
         <StackLayout>
                <!-- switch for the first calculation -->
-            <Switch x:Name="FirstCalculationSwitch"
-                    Toggled="FirstCalculationSwitch_OnToggled"
-                    HorizontalOptions="CenterAndExpand"/>   
+               <Label x:Name="SwitchLabel"/>
+               <Switch x:Name="FirstCalculationSwitch"
+                       Toggled="FirstCalculationSwitch_OnToggled"
+                       HorizontalOptions="CenterAndExpand"/>   
+                  
+                  <!-- weight card -->
+               <Entry x:Name="WeightEntry"
+                      Placeholder="Weight"
+                      Keyboard="Numeric"
+                      FontSize="20"
+                      HorizontalOptions="CenterAndExpand"
+                      HorizontalTextAlignment="Center"/>
                
-               <!-- weight card -->
-            <Entry x:Name="WeightEntry"
-                   Placeholder="Weight"
-                   Keyboard="Numeric"
-                   FontSize="20"
-                   HorizontalOptions="CenterAndExpand"
-                   HorizontalTextAlignment="Center"/>
-            
-               <!-- current apttr -->
-            <Entry x:Name="CurrentApttrEntry"
-                   Placeholder="Current APTTr"
-                   Keyboard="Numeric"
-                   FontSize="20"
-                   HorizontalOptions="CenterAndExpand"
-                   HorizontalTextAlignment="Center"
-                   HeightRequest="60"/>
-            
-                <!-- wanted apttr -->
-            <Entry x:Name="WantedApttrEntry"
-                   Placeholder="Wanted APTTr"
-                   Keyboard="Numeric"
-                   FontSize="20"
-                   HorizontalOptions="CenterAndExpand"
-                   HorizontalTextAlignment="Center"
-                   HeightRequest="60"/>
-            
-              <!-- current speed -->
-            <Entry x:Name="CurrentSpeedEntry"
-                   Placeholder="Current Speed"
-                   Keyboard="Numeric"
-                   FontSize="20"
-                   HorizontalOptions="CenterAndExpand"
-                   HorizontalTextAlignment="Center"
-                   HeightRequest="60"/>
-            
-              <!-- number of units -->
-            <Entry x:Name="NumberOfUnitsEntry"
-                   Placeholder="Number of units"
-                   Keyboard="Numeric"
-                   FontSize="20"
-                   HorizontalOptions="CenterAndExpand"
-                   HorizontalTextAlignment="Center"
-                   HeightRequest="60"/>
-            
-              <!-- volume -->
-            <Entry x:Name="Volume"
-                   Placeholder="Volume"
-                   Keyboard="Numeric"
-                   FontSize="20"
-                   HorizontalOptions="CenterAndExpand"
-                   HorizontalTextAlignment="Center"
-                   HeightRequest="60"/>
-            
-            <!-- bolus -->
-            <Label x:Name="BolusValueLabel" Text="123" FontSize="30" HorizontalOptions="CenterAndExpand"/>
-            
-            <!-- rate -->
-            <Label x:Name="RateValueLabel" Text="123" FontSize="30" HorizontalOptions="CenterAndExpand"/>
+                  <!-- current apttr -->
+               <Entry x:Name="CurrentApttrEntry"
+                      Placeholder="Current APTTr"
+                      Keyboard="Numeric"
+                      FontSize="20"
+                      HorizontalOptions="CenterAndExpand"
+                      HorizontalTextAlignment="Center"
+                      HeightRequest="60"/>
                
-             <!-- calculate button -->
-             <Button x:Name="CalculateButton" Text="Calculate" Clicked="CalculateButton_OnClicked"/>
+                   <!-- wanted apttr -->
+               <Entry x:Name="WantedApttrEntry"
+                      Placeholder="Wanted APTTr"
+                      Keyboard="Numeric"
+                      FontSize="20"
+                      HorizontalOptions="CenterAndExpand"
+                      HorizontalTextAlignment="Center"
+                      HeightRequest="60"/>
+               
+                 <!-- current speed -->
+               <Entry x:Name="CurrentSpeedEntry"
+                      Placeholder="Current Speed"
+                      Keyboard="Numeric"
+                      FontSize="20"
+                      HorizontalOptions="CenterAndExpand"
+                      HorizontalTextAlignment="Center"
+                      HeightRequest="60"/>
+               
+                 <!-- number of units -->
+               <Entry x:Name="NumberOfUnitsEntry"
+                      Placeholder="Number of units"
+                      Keyboard="Numeric"
+                      FontSize="20"
+                      HorizontalOptions="CenterAndExpand"
+                      HorizontalTextAlignment="Center"
+                      HeightRequest="60"/>
+               
+                 <!-- volume -->
+               <Entry x:Name="Volume"
+                      Placeholder="Volume"
+                      Keyboard="Numeric"
+                      FontSize="20"
+                      HorizontalOptions="CenterAndExpand"
+                      HorizontalTextAlignment="Center"
+                      HeightRequest="60"/>
+               
+               <!-- bolus -->
+               <Label x:Name="BolusValueLabel" Text="123" FontSize="30" HorizontalOptions="CenterAndExpand"/>
+               
+               <!-- rate -->
+               <Label x:Name="RateValueLabel" Text="123" FontSize="30" HorizontalOptions="CenterAndExpand"/>
+                  
+                <!-- calculate button -->
+                <Button x:Name="CalculateButton" Text="Calculate" Clicked="CalculateButton_OnClicked"/>
+               
                
         </StackLayout>
     </ContentPage.Content>

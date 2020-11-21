@@ -61,6 +61,15 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Vypočítat.
+        /// </summary>
+        internal static string Calculate {
+            get {
+                return ResourceManager.GetString("Calculate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Současná srážlivost.
         /// </summary>
         internal static string CurrentAPTTr {
@@ -75,6 +84,15 @@ namespace SmartDose.Helpers.Resources {
         internal static string CurrentSpeed {
             get {
                 return ResourceManager.GetString("CurrentSpeed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to První výpočet.
+        /// </summary>
+        internal static string FirstCalculation {
+            get {
+                return ResourceManager.GetString("FirstCalculation", resourceCulture);
             }
         }
         

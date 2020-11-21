@@ -1,4 +1,5 @@
 ﻿using System;
+using SmartDose.Helpers.Resources;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,9 +11,23 @@ namespace SmartDose
         public Heparin()
         {
             InitializeComponent();
-            WeightEntry.Text = String.Empty; 
+            // Default values
+            WeightEntry.Text = String.Empty;
+            WantedApttrEntry.Text = String.Empty;
+            NumberOfUnitsEntry.Text = String.Empty;
             CurrentApttrEntry.Text = String.Empty;
             CurrentSpeedEntry.Text = String.Empty;
+            Volume.Text = String.Empty;
+            // Placeholder localization 
+            SwitchLabel.Text = AppResource.FirstCalculation;
+            WeightEntry.Placeholder = AppResource.Weight;
+            WantedApttrEntry.Placeholder = AppResource.WantedAPPTr;
+            NumberOfUnitsEntry.Placeholder = AppResource.NumberOfUnits;
+            CurrentApttrEntry.Placeholder = AppResource.CurrentAPTTr;
+            CurrentSpeedEntry.Placeholder = AppResource.CurrentSpeed;
+            Volume.Placeholder = AppResource.Volume;
+            CalculateButton.Text = AppResource.Calculate;
+            
         }
 
         private async void CalculateButton_OnClicked(object sender, EventArgs e)

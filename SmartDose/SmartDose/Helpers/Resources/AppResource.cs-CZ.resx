@@ -39,4 +39,10 @@
     <data name="Insulin" xml:space="preserve">
         <value>Inzulín</value>
     </data>
+    <data name="Calculate" xml:space="preserve">
+        <value>Vypočítat</value>
+    </data>
+    <data name="FirstCalculation" xml:space="preserve">
+        <value>První výpočet</value>
+    </data>
 </root>

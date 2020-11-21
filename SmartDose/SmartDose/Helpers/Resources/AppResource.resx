@@ -45,4 +45,10 @@
     <data name="SmartDose" xml:space="preserve">
         <value>SmartDose</value>
     </data>
+    <data name="Calculate" xml:space="preserve">
+        <value>Calculate</value>
+    </data>
+    <data name="FirstCalculation" xml:space="preserve">
+        <value>First calculation</value>
+    </data>
 </root>
