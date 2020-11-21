@@ -6,6 +6,10 @@
     
     <ContentPage.Content>
         <StackLayout>
+               <!-- switch for the first calculation -->
+            <Switch x:Name="FirstCalculationSwitch"
+                    Toggled="FirstCalculationSwitch_OnToggled"
+                    HorizontalOptions="CenterAndExpand"/>   
                
                <!-- weight card -->
             <Entry x:Name="WeightEntry"
@@ -15,7 +19,7 @@
                    HorizontalOptions="CenterAndExpand"
                    HorizontalTextAlignment="Center"/>
             
-            <!-- current apttr -->
+               <!-- current apttr -->
             <Entry x:Name="CurrentApttrEntry"
                    Placeholder="Current APTTr"
                    Keyboard="Numeric"
@@ -24,7 +28,7 @@
                    HorizontalTextAlignment="Center"
                    HeightRequest="60"/>
             
-            <!-- wanted apttr -->
+                <!-- wanted apttr -->
             <Entry x:Name="WantedApttrEntry"
                    Placeholder="Wanted APTTr"
                    Keyboard="Numeric"
@@ -33,7 +37,7 @@
                    HorizontalTextAlignment="Center"
                    HeightRequest="60"/>
             
-            <!-- current speed -->
+              <!-- current speed -->
             <Entry x:Name="CurrentSpeedEntry"
                    Placeholder="Current Speed"
                    Keyboard="Numeric"
@@ -42,7 +46,7 @@
                    HorizontalTextAlignment="Center"
                    HeightRequest="60"/>
             
-            <!-- number of units -->
+              <!-- number of units -->
             <Entry x:Name="NumberOfUnitsEntry"
                    Placeholder="Number of units"
                    Keyboard="Numeric"
@@ -51,7 +55,7 @@
                    HorizontalTextAlignment="Center"
                    HeightRequest="60"/>
             
-            <!-- volume -->
+              <!-- volume -->
             <Entry x:Name="Volume"
                    Placeholder="Volume"
                    Keyboard="Numeric"
@@ -61,10 +65,10 @@
                    HeightRequest="60"/>
             
             <!-- bolus -->
-            <Label x:Name="BolusValueLabel" Text="123" FontSize="30"/>
+            <Label x:Name="BolusValueLabel" Text="123" FontSize="30" HorizontalOptions="CenterAndExpand"/>
             
             <!-- rate -->
-            <Label x:Name="RateValueLabel" Text="123" FontSize="30"/>
+            <Label x:Name="RateValueLabel" Text="123" FontSize="30" HorizontalOptions="CenterAndExpand"/>
                
              <!-- calculate button -->
              <Button x:Name="CalculateButton" Text="Calculate" Clicked="CalculateButton_OnClicked"/>

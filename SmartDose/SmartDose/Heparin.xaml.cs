@@ -17,15 +17,20 @@ namespace SmartDose
 
         private async void CalculateButton_OnClicked(object sender, EventArgs e)
         {
-            if (WeightEntry.Text == String.Empty || CurrentApttrEntry.Text == String.Empty || CurrentSpeedEntry.Text == String.Empty )
+            if (WeightEntry.Text == String.Empty || WantedApttrEntry.Text == String.Empty || NumberOfUnitsEntry.Text == String.Empty || Volume.Text == String.Empty || (CurrentApttrEntry.IsVisible && CurrentApttrEntry.Text == String.Empty) || (CurrentSpeedEntry.IsVisible && CurrentSpeedEntry.Text == String.Empty))                                
             {
-                
+                CalculateButton.Text = "Please Enter All Values";
             }
             else
             {
-
-                
+                CalculateButton.Text = "Calculated";
             }
+        }
+
+        private void FirstCalculationSwitch_OnToggled(object sender, ToggledEventArgs e)
+        {
+            CurrentApttrEntry.IsVisible = !FirstCalculationSwitch.IsToggled;
+            CurrentSpeedEntry.IsVisible = !FirstCalculationSwitch.IsToggled;
         }
     }
 }
