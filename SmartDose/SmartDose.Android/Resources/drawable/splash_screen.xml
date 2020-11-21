@@ -5,8 +5,8 @@
 
     </item>
     <item>
-<!--      TODO Změnit  android:src="@drawable/logo"-->
         <bitmap
+                android:src="@drawable/logo"
                 android:tileMode="disabled"
                 android:gravity="center"
                 android:layout_width = "wrap_content"

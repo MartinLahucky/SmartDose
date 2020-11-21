@@ -147,6 +147,7 @@
         <e p="Resources" t="Include">
           <e p="AboutResources.txt" t="Include" />
           <e p="drawable" t="Include">
+            <e p="logo.png" t="Include" />
             <e p="splash_screen.xml" t="Include" />
           </e>
           <e p="layout" t="Include">
