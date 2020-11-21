@@ -15,20 +15,30 @@ namespace SmartDose
 
         private async void CalculateButton_OnClicked(object sender, EventArgs e)
         {
-            int id = 0;
-            int m = int.Parse(WeightEntry.Text);
-            float currentA = float.Parse(CurrentApttrEntry.Text);
-            float targetA = float.Parse(TargetApttrEntry.Text);
-            HeparinTable[] Tab = await App.Database.GetHeparrinConstants();
-            HeparinTableAPTT[] Aptt = await App.Database.GetHeparrinConstantsAPTT();
-
-            while (Tab[id].Weight < m)
+            if (WeightEntry.Text == String.Empty || CurrentApttrEntry.Text == String.Empty || TargetApttrEntry.Text == String.Empty )
             {
-                id++;
+                CalculateButton.Text = "Kokot";
             }
+            else
+            {
+                int idW = 0, idA = 0;
+                int m = int.Parse(WeightEntry.Text);
+                float currentA = float.Parse(CurrentApttrEntry.Text);
+                float targetA = float.Parse(TargetApttrEntry.Text);
+                HeparinTable[] Tab = await App.Database.GetHeparrinConstants();
+                HeparinTableAPTT[] Aptt = await App.Database.GetHeparrinConstantsAPTT();
             
-            Console.WriteLine("Toto je hmotnost: " + m.ToString());
-            Console.WriteLine("Toto je index: " + Tab[id].Weight.ToString());
+                // determine the index of weight:
+                while (Tab[idW].Weight < m && !(Tab.Length <= idW)) idW++;
+                // determine the index of aptt:
+                while (Aptt[idA].APTTR < currentA && !(Aptt.Length <= idA)) idA++;
+                
+                
+
+                
+                Console.WriteLine("Toto je idW: " + idW);
+                Console.WriteLine("Toto je idA: " + idA);
+            }
         }
     }
 }

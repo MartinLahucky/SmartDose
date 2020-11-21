@@ -6,14 +6,6 @@
     
     <ContentPage.Content>
         <StackLayout>
-            
-            <Entry x:Name="WeightEntry"
-                   Placeholder="EnterWeight"
-                   Keyboard="Numeric"
-                   FontSize="20"
-                   HorizontalOptions="CenterAndExpand"
-                   HorizontalTextAlignment="Center"
-                   HeightRequest="80"/>
             <Button x:Name="CalculateButton" Text="Calculate" Clicked="CalculateButton_OnClicked"/>
             
             <!-- weight card -->
@@ -31,7 +23,13 @@
                            VerticalOptions="EndAndExpand"
                            HorizontalOptions="FillAndExpand">
                         <StackLayout Orientation="Horizontal">
-                       
+                            <Entry x:Name="WeightEntry"
+                                   Placeholder="EnterWeight"
+                                   Keyboard="Numeric"
+                                   FontSize="20"
+                                   HorizontalOptions="CenterAndExpand"
+                                   HorizontalTextAlignment="Center"
+                                   HeightRequest="80"/>
                             <Frame HorizontalOptions="EndAndExpand" BackgroundColor="#DDDDDD" Margin="0">
                                 <Label Text="kg" FontSize="20" VerticalOptions="Center"/>
                             </Frame>
