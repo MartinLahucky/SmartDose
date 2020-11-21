@@ -59,5 +59,68 @@ namespace SmartDose.Helpers.Resources {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Současná srážlivost.
+        /// </summary>
+        internal static string CurrentAPTTr {
+            get {
+                return ResourceManager.GetString("CurrentAPTTr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rychlost dávkování.
+        /// </summary>
+        internal static string CurrentSpeed {
+            get {
+                return ResourceManager.GetString("CurrentSpeed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Inzulín.
+        /// </summary>
+        internal static string Insulin {
+            get {
+                return ResourceManager.GetString("Insulin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Počet jednotek.
+        /// </summary>
+        internal static string NumberOfUnits {
+            get {
+                return ResourceManager.GetString("NumberOfUnits", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Objem.
+        /// </summary>
+        internal static string Volume {
+            get {
+                return ResourceManager.GetString("Volume", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cílová srážlivost.
+        /// </summary>
+        internal static string WantedAPPTr {
+            get {
+                return ResourceManager.GetString("WantedAPPTr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Váha.
+        /// </summary>
+        internal static string Weight {
+            get {
+                return ResourceManager.GetString("Weight", resourceCulture);
+            }
+        }
     }
 }
