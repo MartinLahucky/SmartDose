@@ -7,7 +7,7 @@ using Xamarin.Forms.Platform.Android;
 using Environment = System.Environment;
 namespace SmartDose.Android
 {
-    [Activity(Label = "SmartDose", Theme = "@style/MainTheme", MainLauncher = true,
+    [Activity(Label = "SmartDose", Theme = "@style/MainTheme.Splash", MainLauncher = true,
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : FormsAppCompatActivity
     {
@@ -15,6 +15,7 @@ namespace SmartDose.Android
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
+            base.SetTheme(Resource.Style.MainTheme);
 
             base.OnCreate(savedInstanceState);
             Forms.Init(this, savedInstanceState);
