@@ -93,6 +93,10 @@
         <e p="App.xaml.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Helpers" t="Include">
+          <e p="DatabaseModels" t="Include">
+            <e p="DatabaseController.cs" t="Include" />
+            <e p="HeparinTableAPTT.cs" t="Include" />
+          </e>
           <e p="Resources" t="Include">
             <e p="AppResource.cs-CZ.Designer.cs" t="Include" />
             <e p="AppResource.cs-CZ.resx" t="Include" />
