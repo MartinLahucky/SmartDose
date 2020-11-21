@@ -18,4 +18,25 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
+    <data name="Weight" xml:space="preserve">
+        <value>Váha</value>
+    </data>
+    <data name="CurrentAPTTr" xml:space="preserve">
+        <value>Současná srážlivost</value>
+    </data>
+    <data name="Volume" xml:space="preserve">
+        <value>Objem</value>
+    </data>
+    <data name="CurrentSpeed" xml:space="preserve">
+        <value>Rychlost dávkování</value>
+    </data>
+    <data name="NumberOfUnits" xml:space="preserve">
+        <value>Počet jednotek</value>
+    </data>
+    <data name="WantedAPPTr" xml:space="preserve">
+        <value>Cílová srážlivost</value>
+    </data>
+    <data name="Insulin" xml:space="preserve">
+        <value>Inzulín</value>
+    </data>
 </root>

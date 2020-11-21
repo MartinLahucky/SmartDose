@@ -59,5 +59,86 @@ namespace SmartDose.Helpers.Resources {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Current APTTr.
+        /// </summary>
+        internal static string CurrentAPTTr {
+            get {
+                return ResourceManager.GetString("CurrentAPTTr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Current speed.
+        /// </summary>
+        internal static string CurrentSpeed {
+            get {
+                return ResourceManager.GetString("CurrentSpeed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Heparin.
+        /// </summary>
+        internal static string Heparin {
+            get {
+                return ResourceManager.GetString("Heparin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insulin.
+        /// </summary>
+        internal static string Insulin {
+            get {
+                return ResourceManager.GetString("Insulin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of units.
+        /// </summary>
+        internal static string NumberOfUnits {
+            get {
+                return ResourceManager.GetString("NumberOfUnits", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SmartDose.
+        /// </summary>
+        internal static string SmartDose {
+            get {
+                return ResourceManager.GetString("SmartDose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Volume.
+        /// </summary>
+        internal static string Volume {
+            get {
+                return ResourceManager.GetString("Volume", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wanted APPTr.
+        /// </summary>
+        internal static string WantedAPPTr {
+            get {
+                return ResourceManager.GetString("WantedAPPTr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Weight.
+        /// </summary>
+        internal static string Weight {
+            get {
+                return ResourceManager.GetString("Weight", resourceCulture);
+            }
+        }
     }
 }

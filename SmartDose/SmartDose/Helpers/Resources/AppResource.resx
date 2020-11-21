@@ -18,4 +18,31 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
+    <data name="Weight" xml:space="preserve">
+        <value>Weight</value>
+    </data>
+    <data name="CurrentAPTTr" xml:space="preserve">
+        <value>Current APTTr</value>
+    </data>
+    <data name="WantedAPPTr" xml:space="preserve">
+        <value>Wanted APPTr</value>
+    </data>
+    <data name="CurrentSpeed" xml:space="preserve">
+        <value>Current speed</value>
+    </data>
+    <data name="NumberOfUnits" xml:space="preserve">
+        <value>Number of units</value>
+    </data>
+    <data name="Volume" xml:space="preserve">
+        <value>Volume</value>
+    </data>
+    <data name="Heparin" xml:space="preserve">
+        <value>Heparin</value>
+    </data>
+    <data name="Insulin" xml:space="preserve">
+        <value>Insulin</value>
+    </data>
+    <data name="SmartDose" xml:space="preserve">
+        <value>SmartDose</value>
+    </data>
 </root>
