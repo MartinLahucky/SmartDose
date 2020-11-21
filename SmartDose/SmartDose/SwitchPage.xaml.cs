@@ -14,7 +14,7 @@ namespace SmartDose
             Title = AppResource.SmartDose;
             
             Children.Add(new Heparin {Title = AppResource.Heparin});
-            Children.Add(new Heparin{Title = AppResource.Insulin});
+            Children.Add(new Heparin {Title = AppResource.Insulin});
         }
     }
 }
