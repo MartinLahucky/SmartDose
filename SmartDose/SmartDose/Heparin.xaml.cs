@@ -74,7 +74,7 @@ namespace SmartDose
                         }
                         else
                         {
-                            for (int i = 0; i < hapArray.Length - 2; i++)
+                            for (int i = 0; i < hapArray.Length - 1; i++)
                             {
                                 if (cA > hapArray[i].Aptt && cA <= hapArray[i + 1].Aptt)
                                 {
