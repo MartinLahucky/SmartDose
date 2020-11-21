@@ -1,6 +1,4 @@
-﻿using System;
-using SmartDose.Helpers.Database_Models;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
@@ -9,21 +7,7 @@ namespace SmartDose
 {
     public partial class App : Application
     {
-        private static DatabaseController database;
-        public static string DatabaseLocation = string.Empty;
-
-        public static DatabaseController Database
-        {
-            get
-            {
-                if (database == null)
-                {
-                    database = new DatabaseController();
-                }
-                return database;
-            }
-        }
-        public App(String databaseLocation)
+        public App()
         {
             InitializeComponent();
 
@@ -31,7 +15,6 @@ namespace SmartDose
             {
                 BarTextColor = Color.FromHex("#FFFFFF"),
             };
-            DatabaseLocation = databaseLocation;
         }
 
         protected override void OnStart()
