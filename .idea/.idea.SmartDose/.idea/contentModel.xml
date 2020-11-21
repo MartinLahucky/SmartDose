@@ -32,7 +32,6 @@
           <e p="Database Models" t="Include">
             <e p="DatabaseController.cs" t="Include" />
             <e p="HeparinTable.cs" t="Include" />
-            <e p="HeparinTableAPTT.cs" t="Include" />
           </e>
           <e p="Resources" t="Include">
             <e p="AppResource.cs-CZ.Designer.cs" t="Include" />
@@ -56,7 +55,6 @@
                 </e>
               </e>
               <e p="Heparin.xaml.g.cs" t="Include" />
-              <e p="MainPage.xaml.g.cs" t="Include" />
               <e p="SmartDose.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
