@@ -63,7 +63,34 @@
                 </StackLayout>
             </Frame>
             
-            <!-- target apttr -->
+            <!-- TODO: zeptat se Ivety jestli to sem dát nebo ne (jediné kdy by to asi bylo možné použít (říká honza ve 3:49 ráno) je když by byly hodnoty blízko, tak aby se nastavení dalo přesně na cílovou hodnotu)  -->
+            <!-- ~1~ target apttr @1@ -->
+            <!-- <Frame BackgroundColor="#444444" -->
+            <!--        Padding="20,20" -->
+            <!--        CornerRadius="5" -->
+            <!--        WidthRequest="200" -->
+            <!--        HorizontalOptions="CenterAndExpand" -->
+            <!--        VerticalOptions="CenterAndExpand"> -->
+            <!--     <StackLayout> -->
+            <!--         <Label x:Name="TargetAtpprTitleLabel" Text="Target APTTr" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" TextColor="White" FontSize="30"/> -->
+            <!--         <Frame CornerRadius="5" -->
+            <!--                Padding="0" -->
+            <!--                BackgroundColor="White" -->
+            <!--                VerticalOptions="EndAndExpand" -->
+            <!--                HorizontalOptions="FillAndExpand"> -->
+            <!--             <Entry x:Name="TargetApttrEntry" -->
+            <!--                    Placeholder="EnterTarget ATTPr" -->
+            <!--                    Keyboard="Numeric" -->
+            <!--                    FontSize="20" -->
+            <!--                    HorizontalOptions="CenterAndExpand" -->
+            <!--                    HorizontalTextAlignment="Center" -->
+            <!--                    HeightRequest="80"/> -->
+            <!--         </Frame> -->
+            <!--     </StackLayout> -->
+            <!-- </Frame> -->
+            
+            <!-- current speed -->
+            <!--TODO: dodělat jednotky v šedém labelu (ml/h)-->
             <Frame BackgroundColor="#444444"
                    Padding="20,20"
                    CornerRadius="5"
@@ -71,14 +98,14 @@
                    HorizontalOptions="CenterAndExpand"
                    VerticalOptions="CenterAndExpand">
                 <StackLayout>
-                    <Label x:Name="TargetAtpprTitleLabel" Text="Target APTTr" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" TextColor="White" FontSize="30"/>
+                    <Label x:Name="CurrentSpeedTitleLabel" Text="Current Speed" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" TextColor="White" FontSize="30"/>
                     <Frame CornerRadius="5"
                            Padding="0"
                            BackgroundColor="White"
                            VerticalOptions="EndAndExpand"
                            HorizontalOptions="FillAndExpand">
-                        <Entry x:Name="TargetApttrEntry"
-                               Placeholder="EnterTarget ATTPr"
+                        <Entry x:Name="CurrentSpeedEntry"
+                               Placeholder="Enter current speed"
                                Keyboard="Numeric"
                                FontSize="20"
                                HorizontalOptions="CenterAndExpand"
@@ -87,6 +114,7 @@
                     </Frame>
                 </StackLayout>
             </Frame>
+
             
             <!-- output values -->
             <StackLayout Orientation="Horizontal">
