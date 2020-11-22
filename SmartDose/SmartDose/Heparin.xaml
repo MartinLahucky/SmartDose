@@ -57,6 +57,8 @@
                                    </StackLayout>
                             </Frame>
                      </StackLayout>
+                     
+                     <StackLayout>
                             <!-- current speed -->
                             <Frame x:Name="CurrentRateFrame" BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="1" Margin="5" >
                                    <StackLayout Orientation="Horizontal">  
@@ -72,6 +74,8 @@
                                           </Frame>
                                    </StackLayout>
                             </Frame>
+                     </StackLayout>
+                     
                      <StackLayout>
                             <!-- number of units -->
                             <Frame BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="1" Margin="5">
@@ -94,31 +98,34 @@
                                    </StackLayout>
                             </Frame>
                      </StackLayout>
-                     <!-- bolus -->
-                     <StackLayout Orientation="Horizontal" Margin="0" Padding="0">
-                            <Frame BackgroundColor="#E2001A" CornerRadius="5" HorizontalOptions="Center" Padding="5" Margin="5">
-                                   <Frame BackgroundColor="White" CornerRadius="5" Padding="0">
-                                          <StackLayout Orientation="Horizontal" Padding="0">
-                                                 <Label x:Name="BolusTitleLabel" Text="Bolus:" FontSize="15" VerticalTextAlignment="Center" Margin="10"/>
-                                                 <Label x:Name="BolusValueLabel" Text="123" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" Margin="10"/>   
-                                                 <Frame BackgroundColor="#DDDDDD">
-                                                        <Label x:Name = "BolusUnit" Text="j" VerticalTextAlignment="Center" Margin="0" FontSize="20"/>
-                                                 </Frame>
-                                          </StackLayout>
-                                   </Frame>
-                             </Frame>
-                            
-                            <Frame BackgroundColor="#E2001A" CornerRadius="5" HorizontalOptions="Center" Padding="5" Margin="5">
-                                   <Frame BackgroundColor="White" CornerRadius="5" Padding="0">
-                                          <StackLayout Orientation="Horizontal" Padding="0">
-                                                 <Label x:Name="RateTitleLabel" Text="Rate:" FontSize="15" VerticalTextAlignment="Center" Margin="3,0,0,0"/>
-                                                 <Label x:Name="RateValueLabel" Text="123" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" Margin="10"/>   
-                                                 <Frame BackgroundColor="#DDDDDD">
-                                                        <Label x:Name = "RateUnit" Text="ml/h" VerticalTextAlignment="Center" Margin="0" FontSize="20"/>
-                                                 </Frame>
-                                          </StackLayout>
-                                   </Frame>
-                            </Frame>   
+                     
+                     <StackLayout>
+                            <!-- bolus -->
+                            <StackLayout Orientation="Horizontal" Margin="0" Padding="0">
+                                   <Frame BackgroundColor="#E2001A" CornerRadius="5" HorizontalOptions="Center" Padding="5" Margin="5">
+                                          <Frame BackgroundColor="White" CornerRadius="5" Padding="0">
+                                                 <StackLayout Orientation="Horizontal" Padding="0">
+                                                        <Label x:Name="BolusTitleLabel" Text="Bolus:" FontSize="15" VerticalTextAlignment="Center" Margin="10"/>
+                                                        <Label x:Name="BolusValueLabel" Text="123" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" Margin="10"/>   
+                                                        <Frame BackgroundColor="#DDDDDD">
+                                                               <Label x:Name = "BolusUnit" Text="j" VerticalTextAlignment="Center" Margin="0" FontSize="20"/>
+                                                        </Frame>
+                                                 </StackLayout>
+                                          </Frame>
+                                    </Frame>
+                                   
+                                   <Frame BackgroundColor="#E2001A" CornerRadius="5" HorizontalOptions="Center" Padding="5" Margin="5">
+                                          <Frame BackgroundColor="White" CornerRadius="5" Padding="0">
+                                                 <StackLayout Orientation="Horizontal" Padding="0">
+                                                        <Label x:Name="RateTitleLabel" Text="Rate:" FontSize="15" VerticalTextAlignment="Center" Margin="3,0,0,0"/>
+                                                        <Label x:Name="RateValueLabel" Text="123" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" Margin="10"/>   
+                                                        <Frame BackgroundColor="#DDDDDD">
+                                                               <Label x:Name = "RateUnit" Text="ml/h" VerticalTextAlignment="Center" Margin="0" FontSize="20"/>
+                                                        </Frame>
+                                                 </StackLayout>
+                                          </Frame>
+                                   </Frame>   
+                            </StackLayout>
                      </StackLayout>
                             
                             
