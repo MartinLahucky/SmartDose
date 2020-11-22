@@ -14,7 +14,7 @@ namespace SmartDose
 
             DailyDoseEntry.Text = String.Empty;
             CarbsInMealEntry.Text = String.Empty;
-            WantedGlucoseEntry.Text = String.Empty; // TODO 6
+            WantedGlucoseEntry.Text = String.Empty;
             CurrentGlucoseEntry.Text = String.Empty;
         }
 
