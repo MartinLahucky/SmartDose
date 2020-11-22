@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartDose.Insulin">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <!-- daily dose -->
+            <Entry x:Name="DailyDoseEntry"
+                   Placeholder="Daily Dose"
+                   Keyboard="Numeric"
+                   FontSize="20"
+                   HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"/>
+               
+            <!-- carbs in meal -->
+            <Entry x:Name="CarbsInMealEntry"
+                   Placeholder="Carbs in Meal"
+                   Keyboard="Numeric"
+                   FontSize="20"
+                   HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"
+                   HeightRequest="60"/>
+               
+            <!-- wanted glucose -->
+            <Entry x:Name="WantedGlucoseEntry"
+                   Placeholder="Wanted Glucose"
+                   Keyboard="Numeric"
+                   FontSize="20"
+                   HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"
+                   HeightRequest="60"/>
+               
+            <!-- current glucose -->
+            <Entry x:Name="CurrentGlucoseEntry"
+                   Placeholder="Current Glucose"
+                   Keyboard="Numeric"
+                   FontSize="20"
+                   HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"
+                   HeightRequest="60"/>
+            
+            <!-- dose -->
+            <Label x:Name="DoseValueLabel" Text="123" FontSize="30" HorizontalOptions="CenterAndExpand"/>
+                  
+            <!-- calculate button -->
+            <Button x:Name="CalculateButton" Text="Calculate" Clicked="CalculateButton_OnClicked"/>
+            
+            
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
