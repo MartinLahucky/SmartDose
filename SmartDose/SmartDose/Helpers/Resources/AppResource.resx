@@ -51,4 +51,7 @@
     <data name="FirstCalculation" xml:space="preserve">
         <value>First calculation</value>
     </data>
+    <data name="NumberAlert" xml:space="preserve">
+        <value>Please enter all necessary values.</value>
+    </data>
 </root>

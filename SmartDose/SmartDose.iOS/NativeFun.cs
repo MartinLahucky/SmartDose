@@ -1,5 +1,8 @@
 ﻿using Foundation;
+using SmartDose.iOS;
 using UIKit;
+
+[assembly: Xamarin.Forms.Dependency(typeof(NativeFun))]
 
 namespace SmartDose.iOS
 {

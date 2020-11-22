@@ -1,4 +1,5 @@
 using System;
+using SmartDose.Helpers.Resources;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -38,7 +39,7 @@ namespace SmartDose
             }
             catch
             {
-                Console.WriteLine();
+                DependencyService.Get<INativeFun>().ShortAlert(AppResource.NumberAlert);
             }
         }
     }

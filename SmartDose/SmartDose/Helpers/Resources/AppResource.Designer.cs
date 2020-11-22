@@ -115,6 +115,15 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please enter all necessary values..
+        /// </summary>
+        internal static string NumberAlert {
+            get {
+                return ResourceManager.GetString("NumberAlert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Number of units.
         /// </summary>
         internal static string NumberOfUnits {

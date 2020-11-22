@@ -56,7 +56,7 @@ namespace SmartDose
             }
             catch
             {
-                Console.WriteLine();
+                DependencyService.Get<INativeFun>().ShortAlert(AppResource.NumberAlert);
             }
         }
 
