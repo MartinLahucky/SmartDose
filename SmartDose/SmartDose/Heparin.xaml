@@ -81,7 +81,7 @@
                                     HorizontalOptions="CenterAndExpand"
                                     HorizontalTextAlignment="Center"
                                     HeightRequest="60"/>
-                             <Label Text="j" VerticalTextAlignment="Center" FontSize="25"/>
+                             <Label x:Name="NumberOfUnitsUnit" Text="j" VerticalTextAlignment="Center" FontSize="25"/>
                              <Label Text=":" VerticalTextAlignment="Center" FontSize="25"/>
                              <Entry x:Name="VolumeEntry"
                                     Placeholder="Volume"
