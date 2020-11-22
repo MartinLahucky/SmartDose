@@ -142,11 +142,47 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to U.
+        ///   Looks up a localized string similar to u.
         /// </summary>
         internal static string Unit {
             get {
                 return ResourceManager.GetString("Unit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to g.
+        /// </summary>
+        internal static string UnitCarbsInMeal {
+            get {
+                return ResourceManager.GetString("UnitCarbsInMeal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ml/h.
+        /// </summary>
+        internal static string UnitCurrentRate {
+            get {
+                return ResourceManager.GetString("UnitCurrentRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to mmol/l.
+        /// </summary>
+        internal static string UnitGlucose {
+            get {
+                return ResourceManager.GetString("UnitGlucose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to kg.
+        /// </summary>
+        internal static string UnitWeight {
+            get {
+                return ResourceManager.GetString("UnitWeight", resourceCulture);
             }
         }
         

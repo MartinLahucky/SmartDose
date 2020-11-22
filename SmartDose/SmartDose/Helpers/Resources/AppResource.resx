@@ -55,6 +55,18 @@
         <value>Please enter all necessary values.</value>
     </data>
     <data name="Unit" xml:space="preserve">
-        <value>U</value>
+        <value>u</value>
+    </data>
+    <data name="UnitWeight" xml:space="preserve">
+        <value>kg</value>
+    </data>
+    <data name="UnitCurrentRate" xml:space="preserve">
+        <value>ml/h</value>
+    </data>
+    <data name="UnitGlucose" xml:space="preserve">
+        <value>mmol/l</value>
+    </data>
+    <data name="UnitCarbsInMeal" xml:space="preserve">
+        <value>g</value>
     </data>
 </root>

@@ -21,7 +21,7 @@ namespace SmartDose
             CurrentRateEntry.Text = String.Empty;
             VolumeEntry.Text = String.Empty;
             
-            // Placeholder localization 
+            // Localization 
             SwitchLabel.Text = AppResource.FirstCalculation;
             WeightEntry.Placeholder = AppResource.Weight;
             WantedApttrEntry.Placeholder = AppResource.WantedAPPTr;
@@ -30,7 +30,9 @@ namespace SmartDose
             CurrentRateEntry.Placeholder = AppResource.CurrentSpeed;
             VolumeEntry.Placeholder = $"{50}";
             CalculateButton.Text = AppResource.Calculate;
-            
+            WeightUnit.Text = AppResource.UnitWeight;
+            CurrentRateUnit.Text = AppResource.UnitCurrentRate;
+            NumberOfUnitsUnit.Text = AppResource.Unit;
         }
 
         private void CalculateButton_OnClicked(object sender, EventArgs e)
@@ -107,6 +109,8 @@ namespace SmartDose
             CurrentApttrEntry.IsVisible = !FirstCalculationSwitch.IsToggled;
             CurrentRateEntry.IsVisible = !FirstCalculationSwitch.IsToggled;
             BolusValueLabel.IsVisible = !FirstCalculationSwitch.IsToggled;
+            CurrentApttrFrame.IsVisible = !FirstCalculationSwitch.IsToggled;
+            CurrentRateFrame.IsVisible = !FirstCalculationSwitch.IsToggled;
         }
     }
 }
