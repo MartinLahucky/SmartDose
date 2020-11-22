@@ -79,6 +79,15 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sacharidy v jídle.
+        /// </summary>
+        internal static string CarbsInMeal {
+            get {
+                return ResourceManager.GetString("CarbsInMeal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Současná srážlivost.
         /// </summary>
         internal static string CurrentAPTTr {
@@ -88,11 +97,29 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Aktuální glukóza.
+        /// </summary>
+        internal static string CurrentGlucose {
+            get {
+                return ResourceManager.GetString("CurrentGlucose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Rychlost dávkování.
         /// </summary>
         internal static string CurrentSpeed {
             get {
                 return ResourceManager.GetString("CurrentSpeed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Denní dávka.
+        /// </summary>
+        internal static string DailyDose {
+            get {
+                return ResourceManager.GetString("DailyDose", resourceCulture);
             }
         }
         
@@ -174,6 +201,15 @@ namespace SmartDose.Helpers.Resources {
         internal static string WantedAPPTr {
             get {
                 return ResourceManager.GetString("WantedAPPTr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cílová glukóza.
+        /// </summary>
+        internal static string WantedGlucose {
+            get {
+                return ResourceManager.GetString("WantedGlucose", resourceCulture);
             }
         }
         

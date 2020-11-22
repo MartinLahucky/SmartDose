@@ -8,73 +8,64 @@
             <StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <Image Source="dailyDose.png" Aspect="AspectFit" HeightRequest="60" Margin="50,0,20,0"/>
-                    <!-- daily dose TODO tyhle dva řádky pod tímhle tudů, to určujou-->
+                    <!-- daily dose -->
                     <Frame BackgroundColor="#444444" Padding="0" CornerRadius="5" Margin="0,5,0,0">
-                        <Frame BackgroundColor="White" CornerRadius="5" HorizontalOptions="StartAndExpand" Padding="0" Margin="1" Grid.Column="0" Grid.Row="0">
+                        <Frame BackgroundColor="White" CornerRadius="5" HorizontalOptions="StartAndExpand" Padding="0" Margin="1">
                             <StackLayout Orientation="Horizontal">
                                 <Entry x:Name="DailyDoseEntry"
-                                       Placeholder="Daily Dose"
                                        Keyboard="Numeric"
                                        FontSize="20"
                                        HorizontalOptions="CenterAndExpand"
                                        HorizontalTextAlignment="Center"/>
-                                <!-- <Frame BackgroundColor="#DDDDDD" CornerRadius="5"> -->
                                 <Label x:Name="DailyDoseUnit" FontSize="25" BackgroundColor="#DDDDDD" VerticalTextAlignment="Center" Padding="15,0"/>
-                                <!-- </Frame> -->
+                            </StackLayout>
+                        </Frame>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="carbs.png" Aspect="AspectFit" HeightRequest="60" Margin="50,0,20,0"/>
+                    <!-- carbs in meal -->
+                    <Frame BackgroundColor="#444444" Padding="0" CornerRadius="5" Margin="0,5,0,0">
+                        <Frame BackgroundColor="White" CornerRadius="5" HorizontalOptions="StartAndExpand" Padding="0" Margin="1">
+                            <StackLayout Orientation="Horizontal">
+                                <Entry x:Name="CarbsInMealEntry"
+                                       Keyboard="Numeric"
+                                       FontSize="20"
+                                       HorizontalOptions="CenterAndExpand"
+                                       HorizontalTextAlignment="Center"
+                                       HeightRequest="60"/>
+                                <Label x:Name="CarbsInMealUnit" FontSize="25" BackgroundColor="#DDDDDD" VerticalTextAlignment="Center" Padding="15,0"/>
                             </StackLayout>
                         </Frame>
                     </Frame>
                 </StackLayout>
                 
                 <StackLayout Orientation="Horizontal">
-                    <Image Source="carbs.png" Aspect="AspectFit" HeightRequest="60" Margin="50,0,20,0"/>
-                    <!-- carbs in meal -->
-                    <Frame BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="StartAndExpand" Padding="1" Margin="5">
-                        <StackLayout Orientation="Horizontal">
-                            <Entry x:Name="CarbsInMealEntry"
-                                   Placeholder="Carbs in Meal"
-                                   Keyboard="Numeric"
-                                   FontSize="20"
-                                   HorizontalOptions="CenterAndExpand"
-                                   HorizontalTextAlignment="Center"
-                                   HeightRequest="60"/>
-                            <Frame BackgroundColor="#DDDDDD" CornerRadius="5">
-                                <Label x:Name="CarbsInMealUnit" FontSize="25"/>
-                            </Frame>
-                        </StackLayout>
-                    </Frame>
-                </StackLayout>
-                
-                <StackLayout Orientation="Horizontal">
                     <Image Source="glutose.png" Aspect="AspectFit" HeightRequest="60" Margin="50,0,20,0"/>
                     <!-- wanted glucose -->
-                    <Frame BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="StartAndExpand" Padding="1" Margin="5">
-                        <StackLayout>
-                            <StackLayout Orientation="Horizontal">
-                                <Entry x:Name="CurrentGlucoseEntry"
-                                       Placeholder="Current Glucose"
-                                       Keyboard="Numeric"
-                                       FontSize="20"
-                                       HorizontalOptions="CenterAndExpand"
-                                       HorizontalTextAlignment="Center"
-                                       HeightRequest="60"/>
-                                <Frame BackgroundColor="#DDDDDD" CornerRadius="5">
-                                    <Label x:Name="CurrentGlucoseUnit" FontSize="17"/>
-                                </Frame>
+                    <Frame BackgroundColor="#444444" Padding="0" CornerRadius="5" Margin="0,5,0,0">
+                        <Frame BackgroundColor="White" CornerRadius="5" HorizontalOptions="StartAndExpand" Padding="0" Margin="1">
+                            <StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="CurrentGlucoseEntry"
+                                           Keyboard="Numeric"
+                                           FontSize="20"
+                                           HorizontalOptions="CenterAndExpand"
+                                           HorizontalTextAlignment="Center"
+                                           HeightRequest="60"/>
+                                    <Label x:Name="CurrentGlucoseUnit" FontSize="17" BackgroundColor="#DDDDDD" VerticalTextAlignment="Center" Padding="15,0"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Entry x:Name="WantedGlucoseEntry"
+                                           Keyboard="Numeric"
+                                           FontSize="20"
+                                           HorizontalOptions="CenterAndExpand"
+                                           HorizontalTextAlignment="Center"
+                                           HeightRequest="60"/>
+                                    <Label x:Name="WantedGlucoseUnit" FontSize="17" BackgroundColor="#DDDDDD" VerticalTextAlignment="Center" Padding="15,0"/>
+                                </StackLayout>
                             </StackLayout>
-                            <StackLayout Orientation="Horizontal">
-                                <Entry x:Name="WantedGlucoseEntry"
-                                       Placeholder="Wanted Glucose"
-                                       Keyboard="Numeric"
-                                       FontSize="20"
-                                       HorizontalOptions="CenterAndExpand"
-                                       HorizontalTextAlignment="Center"
-                                       HeightRequest="60"/>
-                                <Frame BackgroundColor="#DDDDDD" CornerRadius="5">
-                                    <Label x:Name="WantedGlucoseUnit" FontSize="17"/>
-                                </Frame>
-                            </StackLayout>
-                        </StackLayout>
+                        </Frame>
                     </Frame>
                 </StackLayout>
                 
@@ -86,9 +77,7 @@
                             <StackLayout Orientation="Horizontal" Padding="0">
                                 <Label x:Name="DoseTitleLabel" FontSize="20" VerticalTextAlignment="Center" Margin="10"/>
                                 <Label x:Name="DoseValueLabel" FontSize="30" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" Margin="10"/>   
-                                <Frame BackgroundColor="#DDDDDD">
-                                    <Label x:Name = "DoseUnit" VerticalTextAlignment="Center" Margin="0" FontSize="30"/>
-                                </Frame>
+                                <Label x:Name = "DoseUnit" VerticalTextAlignment="Center" Margin="0" FontSize="30" BackgroundColor="#DDDDDD" Padding="15,0"/>
                             </StackLayout>
                         </Frame>
                     </Frame>

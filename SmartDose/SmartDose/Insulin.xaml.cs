@@ -19,6 +19,7 @@ namespace SmartDose
             CurrentGlucoseEntry.Text = String.Empty;
 
             // Localization 
+            DailyDoseEntry.Placeholder = AppResource.DailyDose;
             DailyDoseUnit.Text = AppResource.Unit;
             CarbsInMealUnit.Text = AppResource.UnitCarbsInMeal;
             WantedGlucoseUnit.Text = AppResource.UnitGlucose;
@@ -26,6 +27,9 @@ namespace SmartDose
             CalculateButton.Text = AppResource.Calculate;
             DoseUnit.Text = AppResource.Unit;
             DoseTitleLabel.Text = AppResource.Dose;
+            CarbsInMealEntry.Placeholder = AppResource.CarbsInMeal;
+            CurrentGlucoseEntry.Placeholder = AppResource.CurrentGlucose;
+            WantedGlucoseEntry.Placeholder = AppResource.WantedGlucose;
         }
 
         private void CalculateButton_OnClicked(object sender, EventArgs e)

@@ -81,4 +81,16 @@
     <data name="Rate" xml:space="preserve">
         <value>Rate: </value>
     </data>
+    <data name="DailyDose" xml:space="preserve">
+        <value>Daily dose</value>
+    </data>
+    <data name="CarbsInMeal" xml:space="preserve">
+        <value>Carbs in meal</value>
+    </data>
+    <data name="CurrentGlucose" xml:space="preserve">
+        <value>Current glucose</value>
+    </data>
+    <data name="WantedGlucose" xml:space="preserve">
+        <value>Wanted glucose</value>
+    </data>
 </root>

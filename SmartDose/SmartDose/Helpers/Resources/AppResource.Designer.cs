@@ -79,6 +79,15 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Carbs in meal.
+        /// </summary>
+        internal static string CarbsInMeal {
+            get {
+                return ResourceManager.GetString("CarbsInMeal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Current APTTr.
         /// </summary>
         internal static string CurrentAPTTr {
@@ -88,11 +97,29 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Current glucose.
+        /// </summary>
+        internal static string CurrentGlucose {
+            get {
+                return ResourceManager.GetString("CurrentGlucose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Current speed.
         /// </summary>
         internal static string CurrentSpeed {
             get {
                 return ResourceManager.GetString("CurrentSpeed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Daily dose.
+        /// </summary>
+        internal static string DailyDose {
+            get {
+                return ResourceManager.GetString("DailyDose", resourceCulture);
             }
         }
         
@@ -237,6 +264,15 @@ namespace SmartDose.Helpers.Resources {
         internal static string WantedAPPTr {
             get {
                 return ResourceManager.GetString("WantedAPPTr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wanted glucose.
+        /// </summary>
+        internal static string WantedGlucose {
+            get {
+                return ResourceManager.GetString("WantedGlucose", resourceCulture);
             }
         }
         

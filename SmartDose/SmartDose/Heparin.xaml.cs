@@ -33,7 +33,7 @@ namespace SmartDose
             WeightUnit.Text = AppResource.UnitWeight;
             CurrentRateUnit.Text = AppResource.UnitCurrentRate;
             NumberOfUnitsUnit.Text = AppResource.Unit;
-            volumeLabel.Text = AppResource.UnitVolume;
+            VolumeLabel.Text = AppResource.UnitVolume;
             RateTitleLabel.Text = AppResource.Rate;
             RateUnit.Text = AppResource.UnitCurrentRate;
             BolusTitleLabel.Text = AppResource.Bolus;

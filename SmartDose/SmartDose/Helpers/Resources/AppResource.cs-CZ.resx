@@ -60,4 +60,16 @@
     <data name="Bolus" xml:space="preserve">
         <value>Bolus:</value>
     </data>
+    <data name="DailyDose" xml:space="preserve">
+        <value>Denní dávka</value>
+    </data>
+    <data name="CarbsInMeal" xml:space="preserve">
+        <value>Sacharidy v jídle</value>
+    </data>
+    <data name="CurrentGlucose" xml:space="preserve">
+        <value>Aktuální glukóza</value>
+    </data>
+    <data name="WantedGlucose" xml:space="preserve">
+        <value>Cílová glukóza</value>
+    </data>
 </root>
