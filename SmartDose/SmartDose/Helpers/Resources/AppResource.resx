@@ -69,4 +69,7 @@
     <data name="UnitCarbsInMeal" xml:space="preserve">
         <value>g</value>
     </data>
+    <data name="UnitVolume" xml:space="preserve">
+        <value>ml</value>
+    </data>
 </root>

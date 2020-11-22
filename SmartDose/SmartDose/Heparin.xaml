@@ -90,7 +90,7 @@
                                     HorizontalOptions="CenterAndExpand"
                                     HorizontalTextAlignment="Center"
                                     HeightRequest="60"/>
-                             <Label Text="ml" VerticalTextAlignment="Center" FontSize="25" Margin="2"/>
+                             <Label x:Name="volumeLabel" VerticalTextAlignment="Center" FontSize="25" Margin="2"/>
                       </StackLayout>
                </Frame>
                              

@@ -178,6 +178,15 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ml.
+        /// </summary>
+        internal static string UnitVolume {
+            get {
+                return ResourceManager.GetString("UnitVolume", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to kg.
         /// </summary>
         internal static string UnitWeight {
