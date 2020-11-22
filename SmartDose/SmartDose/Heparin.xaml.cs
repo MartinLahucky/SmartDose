@@ -106,7 +106,7 @@ namespace SmartDose
                         if (currentATTR > hapArray[i].Aptt && currentATTR <= hapArray[i + 1].Aptt)
                         {
                             id = i;
-                            bolus = hapArray[i - 1].Bolus;
+                            bolus = hapArray[i + 1].Bolus;
                         }
                     }
                 }
@@ -125,8 +125,8 @@ namespace SmartDose
             BolusValueLabel.IsVisible = !FirstCalculationSwitch.IsToggled;
             CurrentApttrFrame.IsVisible = !FirstCalculationSwitch.IsToggled;
             CurrentRateFrame.IsVisible = !FirstCalculationSwitch.IsToggled;
-            if (FirstCalculationSwitch.IsToggled) SwitchLabel.Text = AppResource.ChangeOfRate;
-            else SwitchLabel.Text = AppResource.FirstCalculation;
+            if (FirstCalculationSwitch.IsToggled) SwitchLabel.Text = AppResource.FirstCalculation;
+            else SwitchLabel.Text = AppResource.ChangeOfRate;
 
         }
     }
