@@ -97,7 +97,7 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dose.
+        ///   Looks up a localized string similar to Dose:.
         /// </summary>
         internal static string Dose {
             get {
