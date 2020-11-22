@@ -22,7 +22,7 @@
                                     HorizontalOptions="CenterAndExpand"
                                     HorizontalTextAlignment="Center"/>
                              <Frame BackgroundColor="#DDDDDD" CornerRadius="5">
-                                    <Label x:Name="WeightUnit" Text="kg" FontSize="25"/>
+                                    <Label x:Name="WeightUnit" FontSize="25"/>
                              </Frame>
                       </StackLayout>
                </Frame>
@@ -64,7 +64,7 @@
                                     HorizontalTextAlignment="Center"
                                     HeightRequest="60"/>
                              <Frame BackgroundColor="#DDDDDD" CornerRadius="5">
-                                    <Label x:Name="CurrentRateUnit" Text="ml/h" FontSize="25"/>
+                                    <Label x:Name="CurrentRateUnit" FontSize="25"/>
                              </Frame>
                       </StackLayout>
                </Frame>
@@ -81,7 +81,7 @@
                                     HorizontalOptions="CenterAndExpand"
                                     HorizontalTextAlignment="Center"
                                     HeightRequest="60"/>
-                             <Label x:Name="NumberOfUnitsUnit" Text="j" VerticalTextAlignment="Center" FontSize="25"/>
+                             <Label x:Name="NumberOfUnitsUnit" VerticalTextAlignment="Center" FontSize="25"/>
                              <Label Text=":" VerticalTextAlignment="Center" FontSize="25"/>
                              <Entry x:Name="VolumeEntry"
                                     Placeholder="Volume"
@@ -95,14 +95,13 @@
                </Frame>
                              
                <!-- bolus -->
-               <Label x:Name="BolusValueLabel" Text="123" FontSize="30" HorizontalOptions="CenterAndExpand"/>
+               <Label x:Name="BolusValueLabel" FontSize="30" HorizontalOptions="CenterAndExpand"/>
                
                <!-- rate -->
-               <Label x:Name="RateValueLabel" Text="123" FontSize="30" HorizontalOptions="CenterAndExpand"/>
+               <Label x:Name="RateValueLabel" FontSize="30" HorizontalOptions="CenterAndExpand"/>
                   
                 <!-- calculate button -->
-                <Button x:Name="CalculateButton" Text="Calculate" Clicked="CalculateButton_OnClicked"/>
-               
+                <Button x:Name="CalculateButton" Clicked="CalculateButton_OnClicked"/>
                
         </StackLayout>
     </ContentPage.Content>

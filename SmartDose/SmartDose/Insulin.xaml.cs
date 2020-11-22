@@ -12,10 +12,18 @@ namespace SmartDose
         {
             InitializeComponent();
 
+            // Default values
             DailyDoseEntry.Text = String.Empty;
             CarbsInMealEntry.Text = String.Empty;
             WantedGlucoseEntry.Text = String.Empty;
             CurrentGlucoseEntry.Text = String.Empty;
+
+            // Localization 
+            DailyDoseUnit.Text = AppResource.Unit;
+            CarbsInMealUnit.Text = AppResource.UnitCarbsInMeal;
+            WantedGlucoseUnit.Text = AppResource.UnitGlucose;
+            CurrentGlucoseUnit.Text = AppResource.UnitGlucose;
+            CalculateButton.Text = AppResource.Calculate;
         }
 
         private void CalculateButton_OnClicked(object sender, EventArgs e)
