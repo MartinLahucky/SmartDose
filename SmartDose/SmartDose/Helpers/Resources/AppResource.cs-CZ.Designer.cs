@@ -88,6 +88,15 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Dávka.
+        /// </summary>
+        internal static string Dose {
+            get {
+                return ResourceManager.GetString("Dose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to První výpočet.
         /// </summary>
         internal static string FirstCalculation {
