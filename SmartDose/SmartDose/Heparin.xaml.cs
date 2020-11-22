@@ -42,72 +42,74 @@ namespace SmartDose
 
         private void CalculateButton_OnClicked(object sender, EventArgs e)
         {
-            float weight, currentATTR, currentRate;           // Weight, Current APTTR, Current Rate,
-            int numberOfUnits, volume;                        // Number of Units, Volume
+            float weight = float.NaN, currentATTR = float.NaN;           // Weight, Current APTTR, Current Rate,
+            int currentRate, numberOfUnits = 2500, volume = 50;                        // Number of Units, Volume
             
-            try
+            weight = float.Parse(WeightEntry.Text);
+            if (Single.IsNaN(weight)) DependencyService.Get<INativeFun>().ShortAlert(AppResource.NumberAlert);
+            else
             {
-                currentRate = int.Parse(CurrentRateEntry.Text);
-                weight = float.Parse(WeightEntry.Text);
-                currentATTR = float.Parse(CurrentApttrEntry.Text);
-                try
+                switch (FirstCalculationSwitch.IsToggled)
                 {
-                    numberOfUnits = int.Parse(NumberOfUnitsEntry.Text);
-                    volume = int.Parse(VolumeEntry.Text);
-                    Calculate(currentRate, weight, currentATTR, numberOfUnits, volume);
+                 case  true:
+                     const int konst = 18;                                                          // Constant needed for evaluating the first rate
+                     RateValueLabel.Text = $"{volume * weight * konst / numberOfUnits}";
+                     BolusValueLabel.Text = "0";
+                     break;
+                 case  false:
+                     try
+                     {
+                         currentRate = int.Parse(CurrentRateEntry.Text);
+                         currentATTR = float.Parse(CurrentApttrEntry.Text);
+                         numberOfUnits = int.Parse(NumberOfUnitsEntry.Text);
+                         volume = int.Parse(VolumeEntry.Text);
+                         if (!Single.IsNaN(currentATTR))
+                         {
+                             Calculate(currentRate, weight, currentATTR, numberOfUnits, volume);
+                         }
+                         else
+                         {
+                             DependencyService.Get<INativeFun>().ShortAlert(AppResource.NumberAlert);
+                         }
+                     }
+                     catch
+                     {
+                         DependencyService.Get<INativeFun>().ShortAlert(AppResource.NumberAlert);
+                     }
+                     break;
+                     
                 }
-                catch
-                {
-                    Calculate(currentRate, weight, currentATTR);   
-                }
-            }
-            catch
-            {
-                DependencyService.Get<INativeFun>().ShortAlert(AppResource.NumberAlert);
             }
         }
 
-        private async void Calculate(float currentRate,float weight = 0, float currentATTR = 0, int numberOfUnits = 2500, int volume = 50)
+        private async void Calculate(float currentRate, float weight, float currentATTR, int numberOfUnits = 2500, int volume = 50)
         {
-            switch (FirstCalculationSwitch.IsToggled)
             {
-                // For the first calculation:
-                case true:
+                int id = 0, bolus = 0;                                                          // Local data holders
+                HeparinTableAPTT[] hapArray = await App.Database.GetHeparrinConstants();        // Array of haparin constants
+                int[] dRmulti = {4, 2, 0, -2, 0};                                               // Array of multiplier of delta rate
+                
+                if (currentATTR > hapArray[hapArray.Length - 1].Aptt)
                 {
-                    const int konst = 18;                                                          // Constant needed for evaluating the first rate
-                    RateValueLabel.Text = $"{volume * weight * konst / numberOfUnits}";
-                    BolusValueLabel.Text = "0";
-                    break;
+                    id = 4;
+                    bolus = hapArray[hapArray.Length - 1].Bolus;
                 }
-                // Fot every next calculation:
-                case false:
+                else
                 {
-                    int id = 0, bolus = 0;                                                          // Local data holders
-                    HeparinTableAPTT[] hapArray = await App.Database.GetHeparrinConstants();        // Array of haparin constants
-                    int[] dRmulti = {4, 2, 0, -2, 0};                                               // Array of multiplier of delta rate
-                    
-                    if (currentATTR > hapArray[hapArray.Length - 1].Aptt)
+                    for (int i = 0; i < hapArray.Length - 1; i++)
                     {
-                        id = 4;
-                        bolus = hapArray[hapArray.Length - 1].Bolus;
-                    }
-                    else
-                    {
-                        for (int i = 0; i < hapArray.Length - 1; i++)
+                        if (currentATTR > hapArray[i].Aptt && currentATTR <= hapArray[i + 1].Aptt)
                         {
-                            if (currentATTR > hapArray[i].Aptt && currentATTR <= hapArray[i + 1].Aptt)
-                            {
-                                id = i;
-                                bolus = hapArray[i].Bolus;
-                            }
+                            id = i;
+                            bolus = hapArray[i].Bolus;
                         }
                     }
-                    RateValueLabel.Text = $"{Math.Round(-currentRate * Math.Sign(id - 4) + volume * weight * dRmulti[id] / numberOfUnits)}";
-                    BolusValueLabel.Text = $"{Math.Round(weight * bolus / 500) * 500}"; 
-                    break;
                 }
+                RateValueLabel.Text = $"{Math.Round(-currentRate * Math.Sign(id - 4) + volume * weight * dRmulti[id] / numberOfUnits)}";
+                BolusValueLabel.Text = $"{Math.Round(weight * bolus / 500) * 500}";
             }
         }
+        
 
         private void FirstCalculationSwitch_OnToggled(object sender, ToggledEventArgs e)
         {
