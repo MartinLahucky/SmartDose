@@ -6,7 +6,7 @@
     </item>
     <item>
         <bitmap
-                android:src="@drawable/glutose"
+                android:src="@drawable/logo"
                 android:tileMode="disabled"
                 android:gravity="center"
                 android:layout_width = "wrap_content"

@@ -114,10 +114,15 @@ namespace SmartDose
         private void FirstCalculationSwitch_OnToggled(object sender, ToggledEventArgs e)
         {
             CurrentApttrEntry.IsVisible = !FirstCalculationSwitch.IsToggled;
+            CurrentApttrImage.IsVisible = !FirstCalculationSwitch.IsToggled;
+            CurrentRateImage.IsVisible = !FirstCalculationSwitch.IsToggled;
             CurrentRateEntry.IsVisible = !FirstCalculationSwitch.IsToggled;
             BolusValueLabel.IsVisible = !FirstCalculationSwitch.IsToggled;
             CurrentApttrFrame.IsVisible = !FirstCalculationSwitch.IsToggled;
             CurrentRateFrame.IsVisible = !FirstCalculationSwitch.IsToggled;
+            if (FirstCalculationSwitch.IsToggled) SwitchLabel.Text = AppResource.ChangeOfRate;
+            else SwitchLabel.Text = AppResource.FirstCalculation;
+
         }
     }
 }

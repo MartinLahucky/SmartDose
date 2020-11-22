@@ -88,6 +88,15 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Change of rate.
+        /// </summary>
+        internal static string ChangeOfRate {
+            get {
+                return ResourceManager.GetString("ChangeOfRate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Current APTTr.
         /// </summary>
         internal static string CurrentAPTTr {

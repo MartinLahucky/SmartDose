@@ -72,4 +72,7 @@
     <data name="WantedGlucose" xml:space="preserve">
         <value>Cílová glukóza</value>
     </data>
+    <data name="ChangeOfRate" xml:space="preserve">
+        <value>Změna rychlosti</value>
+    </data>
 </root>

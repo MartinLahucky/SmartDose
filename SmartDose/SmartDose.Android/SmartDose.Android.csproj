@@ -75,12 +75,16 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\drawable\apttr.png" />
     <AndroidResource Include="Resources\drawable\bolus.png" />
     <AndroidResource Include="Resources\drawable\carbs.png" />
+    <AndroidResource Include="Resources\drawable\concentration.png" />
     <AndroidResource Include="Resources\drawable\dailyDose.png" />
     <AndroidResource Include="Resources\drawable\glutose.png" />
     <AndroidResource Include="Resources\drawable\logo.png" />
+    <AndroidResource Include="Resources\drawable\rate.png" />
     <AndroidResource Include="Resources\drawable\splash_screen.xml" />
+    <AndroidResource Include="Resources\drawable\weight.png" />
     <AndroidResource Include="Resources\layout\Tabbar.axml" />
     <AndroidResource Include="Resources\layout\Toolbar.axml" />
     <AndroidResource Include="Resources\values\styles.xml" />

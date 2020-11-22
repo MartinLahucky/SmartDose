@@ -93,4 +93,7 @@
     <data name="WantedGlucose" xml:space="preserve">
         <value>Wanted glucose</value>
     </data>
+    <data name="ChangeOfRate" xml:space="preserve">
+        <value>Change of rate</value>
+    </data>
 </root>

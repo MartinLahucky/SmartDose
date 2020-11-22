@@ -5,7 +5,7 @@
              x:Class="SmartDose.Insulin">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout>
+            <StackLayout Margin="0,15,0,0">
                 <StackLayout Orientation="Horizontal">
                     <Image Source="dailyDose.png" Aspect="AspectFit" HeightRequest="60" Margin="50,0,20,0"/>
                     <!-- daily dose -->
@@ -84,7 +84,7 @@
                 </StackLayout>
 
             <!-- calculate button -->
-            <Button x:Name="CalculateButton" Text="Calculate" Clicked="CalculateButton_OnClicked"/>
+            <Button x:Name="CalculateButton" Text="Calculate" Clicked="CalculateButton_OnClicked" CornerRadius="20" Margin="80,5,80,15" BackgroundColor="#222222" TextColor="White" VerticalOptions="EndAndExpand"/>
             
             </StackLayout>
         </ScrollView>
