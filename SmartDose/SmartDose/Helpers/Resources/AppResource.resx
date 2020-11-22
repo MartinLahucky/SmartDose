@@ -76,6 +76,9 @@
         <value>Dose</value>
     </data>
     <data name="Bolus" xml:space="preserve">
-        <value>Bolus</value>
+        <value>Bolus:</value>
+    </data>
+    <data name="Rate" xml:space="preserve">
+        <value>Rate: </value>
     </data>
 </root>

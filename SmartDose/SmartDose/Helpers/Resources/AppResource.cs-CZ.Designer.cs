@@ -61,6 +61,15 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bolus:.
+        /// </summary>
+        internal static string Bolus {
+            get {
+                return ResourceManager.GetString("Bolus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Vypočítat.
         /// </summary>
         internal static string Calculate {
@@ -129,6 +138,15 @@ namespace SmartDose.Helpers.Resources {
         internal static string NumberOfUnits {
             get {
                 return ResourceManager.GetString("NumberOfUnits", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rychlost dávkování:.
+        /// </summary>
+        internal static string Rate {
+            get {
+                return ResourceManager.GetString("Rate", resourceCulture);
             }
         }
         

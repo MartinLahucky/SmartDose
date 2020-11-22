@@ -34,6 +34,10 @@ namespace SmartDose
             CurrentRateUnit.Text = AppResource.UnitCurrentRate;
             NumberOfUnitsUnit.Text = AppResource.Unit;
             volumeLabel.Text = AppResource.UnitVolume;
+            RateTitleLabel.Text = AppResource.Rate;
+            RateUnit.Text = AppResource.UnitCurrentRate;
+            BolusTitleLabel.Text = AppResource.Bolus;
+            BolusUnit.Text = AppResource.Unit;
         }
 
         private void CalculateButton_OnClicked(object sender, EventArgs e)

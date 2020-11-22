@@ -78,8 +78,8 @@
                     <Frame BackgroundColor="#E2001A" CornerRadius="5" HorizontalOptions="Center" Padding="5" Margin="5">
                         <Frame BackgroundColor="White" CornerRadius="5" Padding="0">
                             <StackLayout Orientation="Horizontal" Padding="0">
-                                <Label x:Name="DoseTitleLabel" Text="Dose:" FontSize="20" VerticalTextAlignment="Center" Margin="10"/>
-                                <Label x:Name="DoseValueLabel" Text="123" FontSize="30" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" Margin="10"/>   
+                                <Label x:Name="DoseTitleLabel" FontSize="20" VerticalTextAlignment="Center" Margin="10"/>
+                                <Label x:Name="DoseValueLabel" FontSize="30" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" Margin="10"/>   
                                 <Frame BackgroundColor="#DDDDDD">
                                     <Label x:Name = "DoseUnit" VerticalTextAlignment="Center" Margin="0" FontSize="30"/>
                                 </Frame>

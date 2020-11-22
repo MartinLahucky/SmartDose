@@ -61,7 +61,7 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bolus.
+        ///   Looks up a localized string similar to Bolus:.
         /// </summary>
         internal static string Bolus {
             get {
@@ -147,6 +147,15 @@ namespace SmartDose.Helpers.Resources {
         internal static string NumberOfUnits {
             get {
                 return ResourceManager.GetString("NumberOfUnits", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rate: .
+        /// </summary>
+        internal static string Rate {
+            get {
+                return ResourceManager.GetString("Rate", resourceCulture);
             }
         }
         
