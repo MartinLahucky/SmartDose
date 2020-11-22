@@ -24,9 +24,9 @@ namespace SmartDose
             // Localization 
             SwitchLabel.Text = AppResource.FirstCalculation;
             WeightEntry.Placeholder = AppResource.Weight;
+            CurrentApttrEntry.Placeholder = AppResource.CurrentAPTTr;
             WantedApttrEntry.Placeholder = AppResource.WantedAPPTr;
             NumberOfUnitsEntry.Placeholder = $"{2500}";
-            CurrentApttrEntry.Placeholder = AppResource.CurrentAPTTr;
             CurrentRateEntry.Placeholder = AppResource.CurrentSpeed;
             VolumeEntry.Placeholder = $"{50}";
             CalculateButton.Text = AppResource.Calculate;

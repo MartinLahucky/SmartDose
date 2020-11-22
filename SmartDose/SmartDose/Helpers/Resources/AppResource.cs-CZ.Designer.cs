@@ -151,7 +151,7 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cílová srážlivost.
+        ///   Looks up a localized string similar to    Cílová srážlivost   .
         /// </summary>
         internal static string WantedAPPTr {
             get {

@@ -4,127 +4,127 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SmartDose.Heparin">
     
-    <ContentPage.Content>
+<ContentPage.Content>
        <ScrollView>
-            <StackLayout>
-               <!-- switch for the first calculation -->
-               <Frame BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="1" Margin="5">
-                      <StackLayout Orientation="Horizontal">    
-                             <Label x:Name="SwitchLabel" VerticalTextAlignment="Center" Margin="10,0,0,0"/>
-                             <Switch x:Name="FirstCalculationSwitch"
-                                     Toggled="FirstCalculationSwitch_OnToggled"
-                                     ThumbColor="#E2001A"
-                                     HorizontalOptions="CenterAndExpand"/>
-                      </StackLayout>
-               </Frame>
-                  
-                  <!-- weight card -->
-               <Frame BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="1" Margin="5">
-                      <StackLayout Orientation="Horizontal">             
-                             <Entry x:Name="WeightEntry"
-                                    Placeholder="Weight"
-                                    Keyboard="Numeric"
-                                    FontSize="20"
-                                    HorizontalOptions="CenterAndExpand"
-                                    HorizontalTextAlignment="Center"/>
-                             <Frame BackgroundColor="#DDDDDD" CornerRadius="5">
-                                    <Label x:Name="WeightUnit" FontSize="20"/>
-                             </Frame>
-                      </StackLayout>
-               </Frame>
+              <StackLayout>
+                     <StackLayout>
+                            <!-- switch for the first calculation -->
+                            <Frame BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="1" Margin="5">
+                                   <StackLayout Orientation="Horizontal">    
+                                          <Label x:Name="SwitchLabel" VerticalTextAlignment="Center" Margin="10,0,0,0"/>
+                                          <Switch x:Name="FirstCalculationSwitch"
+                                                  Toggled="FirstCalculationSwitch_OnToggled"
+                                                  ThumbColor="#E2001A"
+                                                  HorizontalOptions="CenterAndExpand"/>
+                                   </StackLayout>
+                            </Frame>
+                     </StackLayout>
+                     
+                     <StackLayout>
+                            <!-- weight card -->
+                            <Frame BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="1" Margin="5">
+                                   <StackLayout Orientation="Horizontal">             
+                                          <Entry x:Name="WeightEntry"
+                                                 Placeholder="Weight"
+                                                 Keyboard="Numeric"
+                                                 FontSize="20"
+                                                 HorizontalOptions="CenterAndExpand"
+                                                 HorizontalTextAlignment="Center"/>
+                                          <Frame BackgroundColor="#DDDDDD" CornerRadius="5">
+                                                 <Label x:Name="WeightUnit" FontSize="20"/>
+                                          </Frame>
+                                   </StackLayout>
+                            </Frame>
+                     </StackLayout>
                              
-                  <!-- current apttr -->
-               <Frame x:Name="CurrentApttrFrame" BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="0" Margin="5">
-                      <StackLayout>
-
-                                    <Entry x:Name="CurrentApttrEntry"
-                                           Margin="0"
-                                           Placeholder="Current APTTr"
-                                           Keyboard="Numeric"
-                                           FontSize="15"
-                                           HorizontalOptions="CenterAndExpand"
-                                           HorizontalTextAlignment="Center"
-                                           HeightRequest="60"/>
-            
-                                    <Entry x:Name="WantedApttrEntry"
-                                           Margin="0"
-                                           Placeholder="Wanted APTTr"
-                                           Keyboard="Numeric"
-                                           FontSize="15"
-                                           HorizontalOptions="CenterAndExpand"
-                                           HorizontalTextAlignment="Center"
-                                           HeightRequest="60"/>
-
-                      </StackLayout>
-               </Frame>
-               
-               <!-- current speed -->
-               <Frame x:Name="CurrentRateFrame" BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="1" Margin="5">
-                      <StackLayout Orientation="Horizontal">  
-                             <Entry x:Name="CurrentRateEntry"
-                                    Placeholder="Current Rate"
-                                    Keyboard="Numeric"
-                                    FontSize="20"
-                                    HorizontalOptions="CenterAndExpand"
-                                    HorizontalTextAlignment="Center"
-                                    HeightRequest="60"/>
-                             <Frame BackgroundColor="#DDDDDD" CornerRadius="5">
-                                    <Label x:Name="CurrentRateUnit" FontSize="20"/>
-                             </Frame>
-                      </StackLayout>
-               </Frame>
-               
-               <!-- number of units -->
-               <Frame BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="1" Margin="5">
-                      <StackLayout Orientation="Horizontal">  
-                             <Entry x:Name="NumberOfUnitsEntry"
-                                    Placeholder="Number of units"
-                                    Keyboard="Numeric"
-                                    FontSize="17"
-                                    HorizontalOptions="CenterAndExpand"
-                                    HorizontalTextAlignment="Center"/>
-                             <Label x:Name="NumberOfUnitsUnit" VerticalTextAlignment="Center" FontSize="20"/>
-                             <Label Text=":" VerticalTextAlignment="Center" FontSize="25"/>
-                             <Entry x:Name="VolumeEntry"
-                                    Placeholder="Volume"
-                                    Keyboard="Numeric"
-                                    FontSize="17"
-                                    HorizontalOptions="CenterAndExpand"
-                                    HorizontalTextAlignment="Center"/>
-                             <Label x:Name="volumeLabel" VerticalTextAlignment="Center" FontSize="20" Margin="2"/>
-                      </StackLayout>
-               </Frame>
+                     <StackLayout>
+                            <!-- current apttr -->
+                            <Frame x:Name="CurrentApttrFrame" BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="0" Margin="5">
+                                   <StackLayout Margin="0">
+                                          <Entry x:Name="CurrentApttrEntry"
+                                                 Margin="0,-5,0,-10"
+                                                 Keyboard="Numeric"
+                                                 FontSize="20"
+                                                 HorizontalOptions="CenterAndExpand"
+                                                 HorizontalTextAlignment="Center"/>
                              
-               <!-- bolus -->
-               <StackLayout Orientation="Horizontal" Margin="0" Padding="0">
-                      <Frame BackgroundColor="#E2001A" CornerRadius="5" HorizontalOptions="Center" Padding="5" Margin="5">
-                             <Frame BackgroundColor="White" CornerRadius="5" Padding="0">
-                                    <StackLayout Orientation="Horizontal" Padding="0">
-                                           <Label x:Name="BolusTitleLabel" Text="Bolus:" FontSize="15" VerticalTextAlignment="Center" Margin="10"/>
-                                           <Label x:Name="BolusValueLabel" Text="123" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" Margin="10"/>   
-                                           <Frame BackgroundColor="#DDDDDD">
-                                                  <Label x:Name = "BolusUnit" Text="j" VerticalTextAlignment="Center" Margin="0" FontSize="20"/>
-                                           </Frame>
-                                    </StackLayout>
+                                          <Entry x:Name="WantedApttrEntry"
+                                                 Margin="0,-10,0,0"
+                                                 Keyboard="Numeric"
+                                                 FontSize="20"
+                                                 HorizontalOptions="CenterAndExpand"
+                                                 HorizontalTextAlignment="Center"/>
+                                   </StackLayout>
+                            </Frame>
+                     </StackLayout>
+                            <!-- current speed -->
+                            <Frame x:Name="CurrentRateFrame" BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="1" Margin="5" >
+                                   <StackLayout Orientation="Horizontal">  
+                                          <Entry x:Name="CurrentRateEntry"
+                                                 Placeholder="Current Rate"
+                                                 Keyboard="Numeric"
+                                                 FontSize="20"
+                                                 HorizontalOptions="CenterAndExpand"
+                                                 HorizontalTextAlignment="Center"/>
+                                    
+                                          <Frame BackgroundColor="#DDDDDD" CornerRadius="5">
+                                                 <Label x:Name="CurrentRateUnit" FontSize="20" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"/>
+                                          </Frame>
+                                   </StackLayout>
+                            </Frame>
+                     <StackLayout>
+                            <!-- number of units -->
+                            <Frame BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="1" Margin="5">
+                                   <StackLayout Orientation="Horizontal">  
+                                          <Entry x:Name="NumberOfUnitsEntry"
+                                                 Placeholder="Number of units"
+                                                 Keyboard="Numeric"
+                                                 FontSize="17"
+                                                 HorizontalOptions="CenterAndExpand"
+                                                 HorizontalTextAlignment="Center"/>
+                                          <Label x:Name="NumberOfUnitsUnit" VerticalTextAlignment="Center" FontSize="20"/>
+                                          <Label Text=":" VerticalTextAlignment="Center" FontSize="25"/>
+                                          <Entry x:Name="VolumeEntry"
+                                                 Placeholder="Volume"
+                                                 Keyboard="Numeric"
+                                                 FontSize="17"
+                                                 HorizontalOptions="CenterAndExpand"
+                                                 HorizontalTextAlignment="Center"/>
+                                          <Label x:Name="volumeLabel" VerticalTextAlignment="Center" FontSize="20" Margin="2"/>
+                                   </StackLayout>
+                            </Frame>
+                     </StackLayout>
+                     <!-- bolus -->
+                     <StackLayout Orientation="Horizontal" Margin="0" Padding="0">
+                            <Frame BackgroundColor="#E2001A" CornerRadius="5" HorizontalOptions="Center" Padding="5" Margin="5">
+                                   <Frame BackgroundColor="White" CornerRadius="5" Padding="0">
+                                          <StackLayout Orientation="Horizontal" Padding="0">
+                                                 <Label x:Name="BolusTitleLabel" Text="Bolus:" FontSize="15" VerticalTextAlignment="Center" Margin="10"/>
+                                                 <Label x:Name="BolusValueLabel" Text="123" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" Margin="10"/>   
+                                                 <Frame BackgroundColor="#DDDDDD">
+                                                        <Label x:Name = "BolusUnit" Text="j" VerticalTextAlignment="Center" Margin="0" FontSize="20"/>
+                                                 </Frame>
+                                          </StackLayout>
+                                   </Frame>
                              </Frame>
-                      </Frame> 
-                      <Frame BackgroundColor="#E2001A" CornerRadius="5" HorizontalOptions="Center" Padding="5" Margin="5">
-                             <Frame BackgroundColor="White" CornerRadius="5" Padding="0">
-                                    <StackLayout Orientation="Horizontal" Padding="0">
-                                           <Label x:Name="RateTitleLabel" Text="Rate:" FontSize="15" VerticalTextAlignment="Center" Margin="3,0,0,0"/>
-                                           <Label x:Name="RateValueLabel" Text="123" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" Margin="10"/>   
-                                           <Frame BackgroundColor="#DDDDDD">
-                                                  <Label x:Name = "RateUnit" Text="ml/h" VerticalTextAlignment="Center" Margin="0" FontSize="20"/>
-                                           </Frame>
-                                    </StackLayout>
-                             </Frame>
-                      </Frame>  
-               </StackLayout>
-                  
+                            
+                            <Frame BackgroundColor="#E2001A" CornerRadius="5" HorizontalOptions="Center" Padding="5" Margin="5">
+                                   <Frame BackgroundColor="White" CornerRadius="5" Padding="0">
+                                          <StackLayout Orientation="Horizontal" Padding="0">
+                                                 <Label x:Name="RateTitleLabel" Text="Rate:" FontSize="15" VerticalTextAlignment="Center" Margin="3,0,0,0"/>
+                                                 <Label x:Name="RateValueLabel" Text="123" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" Margin="10"/>   
+                                                 <Frame BackgroundColor="#DDDDDD">
+                                                        <Label x:Name = "RateUnit" Text="ml/h" VerticalTextAlignment="Center" Margin="0" FontSize="20"/>
+                                                 </Frame>
+                                          </StackLayout>
+                                   </Frame>
+                            </Frame>   
+                     </StackLayout>
+                            
+                            
                <!-- calculate button -->
                 <Button x:Name="CalculateButton" Clicked="CalculateButton_OnClicked"/>
-               
-        </StackLayout>
+              </StackLayout>
        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
