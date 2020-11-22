@@ -97,6 +97,15 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Vymazat.
+        /// </summary>
+        internal static string Clear {
+            get {
+                return ResourceManager.GetString("Clear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Současná srážlivost.
         /// </summary>
         internal static string CurrentAPTTr {

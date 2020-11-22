@@ -75,4 +75,7 @@
     <data name="ChangeOfRate" xml:space="preserve">
         <value>Změna rychlosti</value>
     </data>
+    <data name="Clear" xml:space="preserve">
+        <value>Vymazat</value>
+    </data>
 </root>

@@ -114,7 +114,7 @@
                                           </Frame>
                                    </Frame>
                             </StackLayout>
-                            <Button x:Name="ClearButton" BackgroundColor="#E2001A" Margin="50,0" HorizontalOptions="EndAndExpand" TextColor="White"/>
+                            <Button x:Name="ClearButton" BackgroundColor="#E2001A" Margin="50,20" HorizontalOptions="End" VerticalOptions="Center" TextColor="White" Clicked="ClearButton_OnClicked"/>
                      </StackLayout>       
                             
                      
@@ -131,7 +131,7 @@
                      </StackLayout>
                             
                      <!-- calculate button -->
-                     <Button x:Name="CalculateButton" Text="Calculate" Clicked="CalculateButton_OnClicked" CornerRadius="20" Margin="80,5,80,15" BackgroundColor="#222222" TextColor="White" VerticalOptions="EndAndExpand"/>
+                     <Button x:Name="CalculateButton" Clicked="CalculateButton_OnClicked" CornerRadius="20" Margin="80,5,80,15" BackgroundColor="#222222" TextColor="White" VerticalOptions="EndAndExpand"/>
               </StackLayout>
        </ScrollView>
     </ContentPage.Content>

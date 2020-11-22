@@ -12,16 +12,11 @@ namespace SmartDose
         public Heparin()
         {
             InitializeComponent();
-            
-            // Default values
-            WeightEntry.Text = String.Empty;
-            WantedApttrEntry.Text = String.Empty;
-            NumberOfUnitsEntry.Text = String.Empty;
-            CurrentApttrEntry.Text = String.Empty;
-            CurrentRateEntry.Text = String.Empty;
-            VolumeEntry.Text = String.Empty;
-            
+
+            ClearValues();
+
             // Localization 
+            ClearButton.Text = AppResource.Clear;
             SwitchLabel.Text = AppResource.FirstCalculation;
             WeightEntry.Placeholder = AppResource.Weight;
             CurrentApttrEntry.Placeholder = AppResource.CurrentAPTTr;
@@ -123,6 +118,22 @@ namespace SmartDose
             if (FirstCalculationSwitch.IsToggled) SwitchLabel.Text = AppResource.ChangeOfRate;
             else SwitchLabel.Text = AppResource.FirstCalculation;
 
+        }
+
+        private void ClearValues()
+        {
+            // Default values
+            WeightEntry.Text = String.Empty;
+            WantedApttrEntry.Text = String.Empty;
+            NumberOfUnitsEntry.Text = String.Empty;
+            CurrentApttrEntry.Text = String.Empty;
+            CurrentRateEntry.Text = String.Empty;
+            VolumeEntry.Text = String.Empty;
+        }
+
+        private void ClearButton_OnClicked(object sender, EventArgs e)
+        {
+            ClearValues();
         }
     }
 }

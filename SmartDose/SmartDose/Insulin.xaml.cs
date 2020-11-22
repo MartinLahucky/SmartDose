@@ -12,13 +12,10 @@ namespace SmartDose
         {
             InitializeComponent();
 
-            // Default values
-            DailyDoseEntry.Text = String.Empty;
-            CarbsInMealEntry.Text = String.Empty;
-            WantedGlucoseEntry.Text = String.Empty;
-            CurrentGlucoseEntry.Text = String.Empty;
+            ClearValues();
 
             // Localization 
+            ClearButton.Text = AppResource.Clear;
             DailyDoseEntry.Placeholder = AppResource.DailyDose;
             DailyDoseUnit.Text = AppResource.Unit;
             CarbsInMealUnit.Text = AppResource.UnitCarbsInMeal;
@@ -55,6 +52,19 @@ namespace SmartDose
             {
                 DependencyService.Get<INativeFun>().ShortAlert(AppResource.NumberAlert);
             }
+        }
+        private void ClearValues()
+        {
+            // Default values
+            DailyDoseEntry.Text = String.Empty;
+            CarbsInMealEntry.Text = String.Empty;
+            WantedGlucoseEntry.Text = String.Empty;
+            CurrentGlucoseEntry.Text = String.Empty;
+        }
+
+        private void ClearButton_OnClicked(object sender, EventArgs e)
+        {
+            ClearValues();
         }
     }
 }

@@ -96,4 +96,7 @@
     <data name="ChangeOfRate" xml:space="preserve">
         <value>Change of rate</value>
     </data>
+    <data name="Clear" xml:space="preserve">
+        <value>Clear</value>
+    </data>
 </root>
