@@ -60,6 +60,7 @@ namespace SmartDose
             CarbsInMealEntry.Text = String.Empty;
             WantedGlucoseEntry.Text = String.Empty;
             CurrentGlucoseEntry.Text = String.Empty;
+            DoseValueLabel.Text = String.Empty;
         }
 
         private void ClearButton_OnClicked(object sender, EventArgs e)

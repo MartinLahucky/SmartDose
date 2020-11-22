@@ -134,6 +134,8 @@ namespace SmartDose
             CurrentApttrEntry.Text = String.Empty;
             CurrentRateEntry.Text = String.Empty;
             VolumeEntry.Text = String.Empty;
+            RateValueLabel.Text = String.Empty;
+            BolusValueLabel.Text = String.Empty;
         }
 
         private void ClearButton_OnClicked(object sender, EventArgs e)

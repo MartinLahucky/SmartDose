@@ -114,7 +114,7 @@
                                           </Frame>
                                    </Frame>
                             </StackLayout>
-                            <Button x:Name="ClearButton" BackgroundColor="#E2001A" Margin="50,20" HorizontalOptions="End" VerticalOptions="Center" TextColor="White" Clicked="ClearButton_OnClicked"/>
+                            <Button x:Name="ClearButton" BackgroundColor="#E2001A" Margin="10,0,50,20" HorizontalOptions="End" VerticalOptions="Center" TextColor="White" Clicked="ClearButton_OnClicked"/>
                      </StackLayout>       
                             
                      
