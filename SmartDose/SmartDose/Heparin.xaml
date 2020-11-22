@@ -34,12 +34,11 @@
                </Frame>
                              
                   <!-- current apttr -->
-               <Frame x:Name="CurrentApttrFrame" BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="1" Margin="5">
+               <Frame x:Name="CurrentApttrFrame" BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="0" Margin="5">
                       <StackLayout>
 
                                     <Entry x:Name="CurrentApttrEntry"
                                            Margin="0"
-                                           BackgroundColor="Aquamarine"
                                            Placeholder="Current APTTr"
                                            Keyboard="Numeric"
                                            FontSize="15"
@@ -49,7 +48,6 @@
             
                                     <Entry x:Name="WantedApttrEntry"
                                            Margin="0"
-                                           BackgroundColor="Aquamarine"
                                            Placeholder="Wanted APTTr"
                                            Keyboard="Numeric"
                                            FontSize="15"
