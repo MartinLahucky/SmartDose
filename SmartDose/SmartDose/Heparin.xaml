@@ -13,58 +13,87 @@
                        HorizontalOptions="CenterAndExpand"/>   
                   
                   <!-- weight card -->
-               <Entry x:Name="WeightEntry"
-                      Placeholder="Weight"
-                      Keyboard="Numeric"
-                      FontSize="20"
-                      HorizontalOptions="CenterAndExpand"
-                      HorizontalTextAlignment="Center"/>
-               
+               <Frame BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="1" Margin="5">
+                      <StackLayout Orientation="Horizontal">             
+                             <Entry x:Name="WeightEntry"
+                                    Placeholder="Weight"
+                                    Keyboard="Numeric"
+                                    FontSize="20"
+                                    HorizontalOptions="CenterAndExpand"
+                                    HorizontalTextAlignment="Center"/>
+                             <Frame BackgroundColor="#DDDDDD" CornerRadius="5">
+                                    <Label x:Name="WeightUnit" Text="kg" FontSize="25"/>
+                             </Frame>
+                      </StackLayout>
+               </Frame>
+                             
                   <!-- current apttr -->
-               <Entry x:Name="CurrentApttrEntry"
-                      Placeholder="Current APTTr"
-                      Keyboard="Numeric"
-                      FontSize="20"
-                      HorizontalOptions="CenterAndExpand"
-                      HorizontalTextAlignment="Center"
-                      HeightRequest="60"/>
+               <Frame x:Name="CurrentApttrFrame" BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="1" Margin="5">
+                      <StackLayout Orientation="Horizontal">  
+                             <Entry x:Name="CurrentApttrEntry"
+                                    Placeholder="Current APTTr"
+                                    Keyboard="Numeric"
+                                    FontSize="20"
+                                    HorizontalOptions="CenterAndExpand"
+                                    HorizontalTextAlignment="Center"
+                                    HeightRequest="60"/>
+                      </StackLayout>
+               </Frame>
                
                    <!-- wanted apttr -->
-               <Entry x:Name="WantedApttrEntry"
-                      Placeholder="Wanted APTTr"
-                      Keyboard="Numeric"
-                      FontSize="20"
-                      HorizontalOptions="CenterAndExpand"
-                      HorizontalTextAlignment="Center"
-                      HeightRequest="60"/>
+               <Frame BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="1" Margin="5">
+                      <StackLayout Orientation="Horizontal">             
+                            <Entry x:Name="WantedApttrEntry"
+                                    Placeholder="Wanted APTTr"
+                                    Keyboard="Numeric"
+                                    FontSize="20"
+                                    HorizontalOptions="CenterAndExpand"
+                                    HorizontalTextAlignment="Center"
+                                    HeightRequest="60"/>
+                      </StackLayout>
+               </Frame>
                
                  <!-- current speed -->
-               <Entry x:Name="CurrentRateEntry"
-                      Placeholder="Current Speed"
-                      Keyboard="Numeric"
-                      FontSize="20"
-                      HorizontalOptions="CenterAndExpand"
-                      HorizontalTextAlignment="Center"
-                      HeightRequest="60"/>
+               <Frame x:Name="CurrentRateFrame" BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="1" Margin="5">
+                      <StackLayout Orientation="Horizontal">  
+                             <Entry x:Name="CurrentRateEntry"
+                                    Placeholder="Current Rate"
+                                    Keyboard="Numeric"
+                                    FontSize="20"
+                                    HorizontalOptions="CenterAndExpand"
+                                    HorizontalTextAlignment="Center"
+                                    HeightRequest="60"/>
+                             <Frame BackgroundColor="#DDDDDD" CornerRadius="5">
+                                    <Label x:Name="CurrentRateUnit" Text="ml/h" FontSize="25"/>
+                             </Frame>
+                      </StackLayout>
+               </Frame>
+               
+               
                
                  <!-- number of units -->
-               <Entry x:Name="NumberOfUnitsEntry"
-                      Placeholder="Number of units"
-                      Keyboard="Numeric"
-                      FontSize="20"
-                      HorizontalOptions="CenterAndExpand"
-                      HorizontalTextAlignment="Center"
-                      HeightRequest="60"/>
-               
-                 <!-- volume -->
-               <Entry x:Name="VolumeEntry"
-                      Placeholder="Volume"
-                      Keyboard="Numeric"
-                      FontSize="20"
-                      HorizontalOptions="CenterAndExpand"
-                      HorizontalTextAlignment="Center"
-                      HeightRequest="60"/>
-               
+               <Frame BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="1" Margin="5">
+                      <StackLayout Orientation="Horizontal">  
+                             <Entry x:Name="NumberOfUnitsEntry"
+                                    Placeholder="Number of units"
+                                    Keyboard="Numeric"
+                                    FontSize="20"
+                                    HorizontalOptions="CenterAndExpand"
+                                    HorizontalTextAlignment="Center"
+                                    HeightRequest="60"/>
+                             <Label Text="j" VerticalTextAlignment="Center" FontSize="25"/>
+                             <Label Text=":" VerticalTextAlignment="Center" FontSize="25"/>
+                             <Entry x:Name="VolumeEntry"
+                                    Placeholder="Volume"
+                                    Keyboard="Numeric"
+                                    FontSize="20"
+                                    HorizontalOptions="CenterAndExpand"
+                                    HorizontalTextAlignment="Center"
+                                    HeightRequest="60"/>
+                             <Label Text="ml" VerticalTextAlignment="Center" FontSize="25" Margin="2"/>
+                      </StackLayout>
+               </Frame>
+                             
                <!-- bolus -->
                <Label x:Name="BolusValueLabel" Text="123" FontSize="30" HorizontalOptions="CenterAndExpand"/>
                

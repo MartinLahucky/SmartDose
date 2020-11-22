@@ -7,48 +7,73 @@
         <StackLayout>
             
             <!-- daily dose -->
-            <Entry x:Name="DailyDoseEntry"
-                   Placeholder="Daily Dose"
-                   Keyboard="Numeric"
-                   FontSize="20"
-                   HorizontalOptions="CenterAndExpand"
-                   HorizontalTextAlignment="Center"/>
-               
-            <!-- carbs in meal -->
-            <Entry x:Name="CarbsInMealEntry"
-                   Placeholder="Carbs in Meal"
-                   Keyboard="Numeric"
-                   FontSize="20"
-                   HorizontalOptions="CenterAndExpand"
-                   HorizontalTextAlignment="Center"
-                   HeightRequest="60"/>
-               
-            <!-- wanted glucose -->
-            <Entry x:Name="WantedGlucoseEntry"
-                   Placeholder="Wanted Glucose"
-                   Keyboard="Numeric"
-                   FontSize="20"
-                   HorizontalOptions="CenterAndExpand"
-                   HorizontalTextAlignment="Center"
-                   HeightRequest="60"/>
-               
-            <!-- current glucose -->
-            <Entry x:Name="CurrentGlucoseEntry"
-                   Placeholder="Current Glucose"
-                   Keyboard="Numeric"
-                   FontSize="20"
-                   HorizontalOptions="CenterAndExpand"
-                   HorizontalTextAlignment="Center"
-                   HeightRequest="60"/>
+            <Frame BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="1" Margin="5">
+                <StackLayout Orientation="Horizontal">
+                    <Entry x:Name="DailyDoseEntry"
+                           Placeholder="Daily Dose"
+                           Keyboard="Numeric"
+                           FontSize="20"
+                           HorizontalOptions="CenterAndExpand"
+                           HorizontalTextAlignment="Center"/>
+                    <Frame BackgroundColor="#DDDDDD" CornerRadius="5">
+                        <Label x:Name="DailyDoseUnit" Text="j" FontSize="25"/>
+                    </Frame>
+                </StackLayout>
+            </Frame>
             
+            <!-- carbs in meal -->
+            <Frame BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="1" Margin="5">
+                <StackLayout Orientation="Horizontal">
+                    <Entry x:Name="CarbsInMealEntry"
+                           Placeholder="Carbs in Meal"
+                           Keyboard="Numeric"
+                           FontSize="20"
+                           HorizontalOptions="CenterAndExpand"
+                           HorizontalTextAlignment="Center"
+                           HeightRequest="60"/>
+                    <Frame BackgroundColor="#DDDDDD" CornerRadius="5">
+                        <Label x:Name="CarbsInMealUnit" Text="g" FontSize="25"/>
+                    </Frame>
+                </StackLayout>
+            </Frame>
+            
+            <!-- wanted glucose -->
+            <Frame BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="1" Margin="5">
+                <StackLayout Orientation="Horizontal">
+                    <Entry x:Name="WantedGlucoseEntry"
+                           Placeholder="Wanted Glucose"
+                           Keyboard="Numeric"
+                           FontSize="20"
+                           HorizontalOptions="CenterAndExpand"
+                           HorizontalTextAlignment="Center"
+                           HeightRequest="60"/>
+                    <Frame BackgroundColor="#DDDDDD" CornerRadius="5">
+                        <Label x:Name="WantedGlucoseUnit" Text="mmol/l" FontSize="25"/>
+                    </Frame>
+                </StackLayout>
+            </Frame>
+            
+            <!-- current glucose -->
+            <Frame BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="1" Margin="5">
+                <StackLayout Orientation="Horizontal">
+                    <Entry x:Name="CurrentGlucoseEntry"
+                           Placeholder="Current Glucose"
+                           Keyboard="Numeric"
+                           FontSize="20"
+                           HorizontalOptions="CenterAndExpand"
+                           HorizontalTextAlignment="Center"
+                           HeightRequest="60"/>
+                    <Frame BackgroundColor="#DDDDDD" CornerRadius="5">
+                        <Label x:Name="CurrentGlucoseUnit" Text="mmol/l" FontSize="25"/>
+                    </Frame>
+                </StackLayout>
+            </Frame>
+                    
             <!-- dose -->
             <Label x:Name="DoseValueLabel" Text="123" FontSize="30" HorizontalOptions="CenterAndExpand"/>
                   
             <!-- calculate button -->
             <Button x:Name="CalculateButton" Text="Calculate" Clicked="CalculateButton_OnClicked"/>
-            
-            
-            
             
         </StackLayout>
     </ContentPage.Content>
