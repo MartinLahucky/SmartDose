@@ -120,9 +120,9 @@ namespace SmartDose
             BolusValueLabel.IsVisible = !FirstCalculationSwitch.IsToggled;
             CurrentApttrFrame.IsVisible = !FirstCalculationSwitch.IsToggled;
             CurrentRateFrame.IsVisible = !FirstCalculationSwitch.IsToggled;
+            BolusFrame.IsVisible = !FirstCalculationSwitch.IsToggled;
             if (FirstCalculationSwitch.IsToggled) SwitchLabel.Text = AppResource.FirstCalculation;
             else SwitchLabel.Text = AppResource.ChangeOfRate;
-
         }
 
         private void ClearValues()
