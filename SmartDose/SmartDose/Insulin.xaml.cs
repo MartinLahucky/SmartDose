@@ -1,9 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -24,22 +19,26 @@ namespace SmartDose
 
         private void CalculateButton_OnClicked(object sender, EventArgs e)
         {
-            float dailyDose, currentGlucose, wantedGlucose, carbsInMeal;
-            
-            if (DailyDoseEntry.Text == String.Empty || CarbsInMealEntry.Text == String.Empty || WantedGlucoseEntry.Text == String.Empty || CurrentGlucoseEntry.Text == String.Empty)
+            int dailyDose, currentGlucose, wantedGlucose, carbsInMeal;
+
+            try
             {
-                
+                dailyDose = int.Parse(DailyDoseEntry.Text);
+                carbsInMeal = int.Parse(CarbsInMealEntry.Text);
+                currentGlucose = int.Parse(CurrentGlucoseEntry.Text);
+                try
+                {
+                    wantedGlucose = int.Parse(WantedGlucoseEntry.Text);
+                    DoseValueLabel.Text = $"{dailyDose * (currentGlucose - wantedGlucose) / 110 + carbsInMeal * dailyDose / 350}";
+                }
+                catch
+                {
+                    DoseValueLabel.Text = $"{dailyDose * (currentGlucose - 6) / 110 + carbsInMeal * dailyDose / 350}";
+                }
             }
-            else
+            catch
             {
-                dailyDose = float.Parse(DailyDoseEntry.Text);
-                carbsInMeal = float.Parse(CarbsInMealEntry.Text);
-                wantedGlucose = float.Parse(WantedGlucoseEntry.Text);
-                currentGlucose = float.Parse(CurrentGlucoseEntry.Text);
-
-                DoseValueLabel.Text = (dailyDose * (currentGlucose - wantedGlucose) / 110 + carbsInMeal * dailyDose / 350).ToString();
-
-                //J = TDDI × (Gly-Gly’) / 110  +   Mj ×TDDI / 350
+                Console.WriteLine();
             }
         }
     }
