@@ -102,18 +102,21 @@
                                    </Frame>
                             </Frame>
                      </StackLayout>
-                     
-                     <StackLayout HorizontalOptions="Start" Margin="50,0,0,0">
-                            <Frame BackgroundColor="#E2001A" CornerRadius="5" Padding="5" Margin="5">
-                                   <Frame BackgroundColor="White" CornerRadius="5" HorizontalOptions="StartAndExpand" Padding="0" Margin="1">
-                                          <StackLayout Orientation="Horizontal" Padding="0">
-                                                 <Label x:Name="BolusTitleLabel" FontSize="15" VerticalTextAlignment="Center" Margin="3,0,0,0"/>
-                                                 <Label x:Name="BolusValueLabel" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" Margin="10"/>   
-                                                 <Label x:Name = "BolusUnit" Margin="0" FontSize="20" BackgroundColor="#DDDDDD" VerticalTextAlignment="Center" Padding="15,0"/>
-                                          </StackLayout>
+                     <StackLayout Orientation="Horizontal">
+                            <StackLayout HorizontalOptions="Start" Margin="50,0,0,0">
+                                   <Frame BackgroundColor="#E2001A" CornerRadius="5" Padding="5" Margin="5">
+                                          <Frame BackgroundColor="White" CornerRadius="5" HorizontalOptions="StartAndExpand" Padding="0" Margin="1">
+                                                 <StackLayout Orientation="Horizontal" Padding="0">
+                                                        <Label x:Name="BolusTitleLabel" FontSize="15" VerticalTextAlignment="Center" Margin="3,0,0,0"/>
+                                                        <Label x:Name="BolusValueLabel" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" Margin="10"/>   
+                                                        <Label x:Name = "BolusUnit" Margin="0" FontSize="20" BackgroundColor="#DDDDDD" VerticalTextAlignment="Center" Padding="15,0"/>
+                                                 </StackLayout>
+                                          </Frame>
                                    </Frame>
-                            </Frame>
-                     </StackLayout>
+                            </StackLayout>
+                            <Button x:Name="ClearButton" BackgroundColor="#E2001A" Margin="50,0" HorizontalOptions="EndAndExpand" TextColor="White"/>
+                     </StackLayout>       
+                            
                      
                      <StackLayout HorizontalOptions="Start" Margin="50,0,0,0">
                             <Frame BackgroundColor="#E2001A" CornerRadius="5" Padding="5" Margin="5">
