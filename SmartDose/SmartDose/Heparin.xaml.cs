@@ -61,28 +61,33 @@ namespace SmartDose
                      {
                          currentRate = int.Parse(CurrentRateEntry.Text);
                          currentATTR = float.Parse(CurrentApttrEntry.Text);
-                         numberOfUnits = int.Parse(NumberOfUnitsEntry.Text);
-                         volume = int.Parse(VolumeEntry.Text);
-                         if (!Single.IsNaN(currentATTR))
+                         if (!Single.IsNaN(currentATTR) && !Single.IsNaN(float.Parse(WantedApttrEntry.Text)))
                          {
-                             Calculate(currentRate, weight, currentATTR, numberOfUnits, volume);
+                             try
+                             {
+                                 numberOfUnits = int.Parse(NumberOfUnitsEntry.Text);
+                                 volume = int.Parse(VolumeEntry.Text);
+                                 Calculate(currentRate, weight, currentATTR, numberOfUnits, volume);
+                                 break;
+                             }
+                             catch
+                             {
+                                 Calculate(currentRate, weight, currentATTR, numberOfUnits, volume);
+                                 break;
+                             }
                          }
-                         else
-                         {
-                             DependencyService.Get<INativeFun>().ShortAlert(AppResource.NumberAlert);
-                         }
+                         DependencyService.Get<INativeFun>().ShortAlert(AppResource.NumberAlert);
                      }
                      catch
                      {
                          DependencyService.Get<INativeFun>().ShortAlert(AppResource.NumberAlert);
                      }
                      break;
-                     
                 }
             }
         }
 
-        private async void Calculate(float currentRate, float weight, float currentATTR, int numberOfUnits = 2500, int volume = 50)
+        private async void Calculate(float currentRate, float weight, float currentATTR, int numberOfUnits, int volume)
         {
             {
                 int id = 0, bolus = 0;                                                          // Local data holders
@@ -101,7 +106,7 @@ namespace SmartDose
                         if (currentATTR > hapArray[i].Aptt && currentATTR <= hapArray[i + 1].Aptt)
                         {
                             id = i;
-                            bolus = hapArray[i].Bolus;
+                            bolus = hapArray[i - 1].Bolus;
                         }
                     }
                 }
