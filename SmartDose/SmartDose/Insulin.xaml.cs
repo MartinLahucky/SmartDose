@@ -1,4 +1,5 @@
 using System;
+using SmartDose.Helpers.Resources;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -13,7 +14,7 @@ namespace SmartDose
 
             DailyDoseEntry.Text = String.Empty;
             CarbsInMealEntry.Text = String.Empty;
-            WantedGlucoseEntry.Text = String.Empty; // TODO 6
+            WantedGlucoseEntry.Text = String.Empty;
             CurrentGlucoseEntry.Text = String.Empty;
         }
 
@@ -38,7 +39,7 @@ namespace SmartDose
             }
             catch
             {
-                Console.WriteLine();
+                DependencyService.Get<INativeFun>().ShortAlert(AppResource.NumberAlert);
             }
         }
     }

@@ -106,11 +106,29 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Prosím, zadejte všechny nezbytné hodnoty..
+        /// </summary>
+        internal static string NumberAlert {
+            get {
+                return ResourceManager.GetString("NumberAlert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Počet jednotek.
         /// </summary>
         internal static string NumberOfUnits {
             get {
                 return ResourceManager.GetString("NumberOfUnits", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to J.
+        /// </summary>
+        internal static string Unit {
+            get {
+                return ResourceManager.GetString("Unit", resourceCulture);
             }
         }
         

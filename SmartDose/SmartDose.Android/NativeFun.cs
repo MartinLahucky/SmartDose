@@ -1,5 +1,9 @@
 ﻿using Android.Widget;
+using SmartDose.Android;
+using Xamarin.Forms;
 using AndroidApp = Android.App.Application;
+
+[assembly: Dependency(typeof(NativeFun))]
 
 namespace SmartDose.Android
 {
