@@ -7,7 +7,7 @@
 <ContentPage.Content>
        <ScrollView>
               <StackLayout>
-                     <StackLayout>
+                     <StackLayout Orientation="Horizontal">
                             <!-- switch for the first calculation -->
                             <Frame BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="1" Margin="5">
                                    <StackLayout Orientation="Horizontal">    
@@ -20,9 +20,10 @@
                             </Frame>
                      </StackLayout>
                      
-                     <StackLayout>
+                     <StackLayout Orientation="Horizontal">
+                            <Image Source="bolus.png" Aspect="AspectFit" HeightRequest="40"/>
                             <!-- weight card -->
-                            <Frame BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="1" Margin="5">
+                            <Frame BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="CenterAndExpand" Padding="1" Margin="5">
                                    <StackLayout Orientation="Horizontal">             
                                           <Entry x:Name="WeightEntry"
                                                  Placeholder="Weight"
@@ -37,7 +38,8 @@
                             </Frame>
                      </StackLayout>
                              
-                     <StackLayout>
+                     <StackLayout Orientation="Horizontal">
+                            <Image Source="atppr.png"/>
                             <!-- current apttr -->
                             <Frame x:Name="CurrentApttrFrame" BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="0" Margin="5">
                                    <StackLayout Margin="0">
@@ -58,7 +60,8 @@
                             </Frame>
                      </StackLayout>
                      
-                     <StackLayout>
+                     <StackLayout Orientation="Horizontal">
+                            <Image Source="rate.png"/>
                             <!-- current speed -->
                             <Frame x:Name="CurrentRateFrame" BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="1" Margin="5" >
                                    <StackLayout Orientation="Horizontal">  
@@ -76,7 +79,8 @@
                             </Frame>
                      </StackLayout>
                      
-                     <StackLayout>
+                     <StackLayout Orientation="Horizontal">
+                            <Image Source="concentration.png"/>
                             <!-- number of units -->
                             <Frame BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="Center" Padding="1" Margin="5">
                                    <StackLayout Orientation="Horizontal">  
