@@ -48,4 +48,7 @@
     <data name="NumberAlert" xml:space="preserve">
         <value>Prosím, zadejte všechny nezbytné hodnoty.</value>
     </data>
+    <data name="Unit" xml:space="preserve">
+        <value>J</value>
+    </data>
 </root>
