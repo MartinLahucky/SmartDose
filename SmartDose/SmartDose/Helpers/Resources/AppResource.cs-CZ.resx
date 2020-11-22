@@ -51,4 +51,7 @@
     <data name="Unit" xml:space="preserve">
         <value>j</value>
     </data>
+    <data name="Dose" xml:space="preserve">
+        <value>Dávka</value>
+    </data>
 </root>

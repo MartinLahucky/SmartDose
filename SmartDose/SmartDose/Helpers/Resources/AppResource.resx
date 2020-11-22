@@ -72,4 +72,7 @@
     <data name="UnitVolume" xml:space="preserve">
         <value>ml</value>
     </data>
+    <data name="Dose" xml:space="preserve">
+        <value>Dose</value>
+    </data>
 </root>

@@ -16,7 +16,7 @@
                            HorizontalOptions="CenterAndExpand"
                            HorizontalTextAlignment="Center"/>
                     <Frame BackgroundColor="#DDDDDD" CornerRadius="5">
-                        <Label x:Name="DailyDoseUnit" Text="j" FontSize="25"/>
+                        <Label x:Name="DailyDoseUnit" FontSize="25"/>
                     </Frame>
                 </StackLayout>
             </Frame>
@@ -32,7 +32,7 @@
                            HorizontalTextAlignment="Center"
                            HeightRequest="60"/>
                     <Frame BackgroundColor="#DDDDDD" CornerRadius="5">
-                        <Label x:Name="CarbsInMealUnit" Text="g" FontSize="25"/>
+                        <Label x:Name="CarbsInMealUnit" FontSize="25"/>
                     </Frame>
                 </StackLayout>
             </Frame>
@@ -49,7 +49,7 @@
                                HorizontalTextAlignment="Center"
                                HeightRequest="60"/>
                         <Frame BackgroundColor="#DDDDDD" CornerRadius="5">
-                            <Label x:Name="CurrentGlucoseUnit" Text="mmol/l" FontSize="25"/>
+                            <Label x:Name="CurrentGlucoseUnit" FontSize="25"/>
                         </Frame>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
@@ -61,7 +61,7 @@
                                HorizontalTextAlignment="Center"
                                HeightRequest="60"/>
                         <Frame BackgroundColor="#DDDDDD" CornerRadius="5">
-                            <Label x:Name="WantedGlucoseUnit" Text="mmol/l" FontSize="25"/>
+                            <Label x:Name="WantedGlucoseUnit" FontSize="25"/>
                         </Frame>
                     </StackLayout>
                 </StackLayout>
@@ -74,7 +74,7 @@
                         <Label x:Name="DoseTitleLabel" Text="Dose:" FontSize="20" VerticalTextAlignment="Center" Margin="10"/>
                         <Label x:Name="DoseValueLabel" Text="123" FontSize="30" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" Margin="10"/>   
                         <Frame BackgroundColor="#DDDDDD">
-                            <Label x:Name = "DoseUnit" Text="j" VerticalTextAlignment="Center" Margin="0" FontSize="30"/>
+                            <Label x:Name = "DoseUnit" VerticalTextAlignment="Center" Margin="0" FontSize="30"/>
                         </Frame>
                     </StackLayout>
                 </Frame>

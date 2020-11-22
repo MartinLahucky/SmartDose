@@ -24,6 +24,8 @@ namespace SmartDose
             WantedGlucoseUnit.Text = AppResource.UnitGlucose;
             CurrentGlucoseUnit.Text = AppResource.UnitGlucose;
             CalculateButton.Text = AppResource.Calculate;
+            DoseUnit.Text = AppResource.Unit;
+            DoseTitleLabel.Text = AppResource.Dose;
         }
 
         private void CalculateButton_OnClicked(object sender, EventArgs e)
