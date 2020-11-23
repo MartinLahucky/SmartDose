@@ -25,7 +25,7 @@
         <value>Current APTTr</value>
     </data>
     <data name="WantedAPPTr" xml:space="preserve">
-        <value>Wanted APPTr</value>
+        <value>Targeted APPTr</value>
     </data>
     <data name="CurrentSpeed" xml:space="preserve">
         <value>Current speed</value>
@@ -91,7 +91,7 @@
         <value>Current glucose</value>
     </data>
     <data name="WantedGlucose" xml:space="preserve">
-        <value>Wanted glucose</value>
+        <value>Targeted glucose</value>
     </data>
     <data name="ChangeOfRate" xml:space="preserve">
         <value>Change of rate</value>

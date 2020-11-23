@@ -324,7 +324,7 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Wanted APPTr.
+        ///   Looks up a localized string similar to Targeted APPTr.
         /// </summary>
         internal static string WantedAPPTr {
             get {
@@ -333,7 +333,7 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Wanted glucose.
+        ///   Looks up a localized string similar to Targeted glucose.
         /// </summary>
         internal static string WantedGlucose {
             get {
