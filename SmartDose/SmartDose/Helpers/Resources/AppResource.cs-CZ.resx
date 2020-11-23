@@ -82,7 +82,7 @@
         <value>O nás</value>
     </data>
     <data name="AboutProjectDescription" xml:space="preserve">
-        <value>Tento projekt vzniknul na Smart Health Hackathon 2020.</value>
+        <value>Tato aplikace byla vytvořena, aby ulehčila práci zdravotnickému i lékařskému personálu. Je určena pro výpočet úvodní rychlosti ifuze při heparinizaci a následné úpravy rychlosti dle aPPTr, případně pro podání bolusové dávky dle aPTTr. Dále slouží jako kalkulačka pro výpočet podání krátkodobého rychlepůsobícího inzulinu u pacientů s nestabilní glykémií. Aplikace funguje plně offline.</value>
     </data>
     <data name="AboutUsDescription" xml:space="preserve">
         <value>Doktorka: Iveta Martínková
