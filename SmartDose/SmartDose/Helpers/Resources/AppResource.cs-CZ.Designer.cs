@@ -88,7 +88,7 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to O týmu.
+        ///   Looks up a localized string similar to O nás.
         /// </summary>
         internal static string AboutUs {
             get {
