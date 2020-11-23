@@ -79,7 +79,7 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This application was created to facilitate the work of medical and medical staff. It is intended for the calculation of the initial rate of ifusion during heparinization and subsequent adjustment of the rate according to aPPTr, or for the administration of a bolus dose according to aPTTr. It also serves as a calculator for calculating the administration of short-acting fast-acting insulin in patients with unstable glycaemia. The application works fully offline..
+        ///   Looks up a localized string similar to This application was created to facilitate the work of medical and medical staff. It is intended for calculation of the initial infusion rate during heparinization and subsequent adjustment of the rate according to aPPTr, or for the administration of a bolus dose according to aPTTr. It also serves as a calculator for calculating the administration of short-acting fast-acting insulin in patients with unstable glycemia. The application works fully offline..
         /// </summary>
         internal static string AboutProjectDescription {
             get {

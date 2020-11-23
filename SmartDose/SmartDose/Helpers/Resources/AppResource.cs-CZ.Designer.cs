@@ -79,7 +79,7 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tato aplikace byla vytvořena, aby ulehčila práci zdravotnickému i lékařskému personálu. Je určena pro výpočet úvodní rychlosti ifuze při heparinizaci a následné úpravy rychlosti dle aPPTr, případně pro podání bolusové dávky dle aPTTr. Dále slouží jako kalkulačka pro výpočet podání krátkodobého rychlepůsobícího inzulinu u pacientů s nestabilní glykémií. Aplikace funguje plně offline..
+        ///   Looks up a localized string similar to Tato aplikace byla vytvořena, aby ulehčila práci zdravotnickému i lékařskému personálu. Je určena pro výpočet úvodní rychlosti infuze při heparinizaci a následné úpravy rychlosti dle aPPTr, případně pro podání bolusové dávky dle aPTTr. Dále slouží jako kalkulačka pro výpočet podání krátkodobého rychle působícího inzulinu u pacientů s nestabilní glykémií. Aplikace funguje plně offline..
         /// </summary>
         internal static string AboutProjectDescription {
             get {
