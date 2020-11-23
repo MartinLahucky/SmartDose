@@ -21,7 +21,7 @@ namespace SmartDose
             
             // Localization 
             ClearButton.Text = AppResource.Clear;
-            SwitchLabel.Text = AppResource.FirstCalculation;
+            SwitchLabel.Text = AppResource.ChangeOfRate;
             WeightEntry.Placeholder = AppResource.Weight;
             CurrentApttrEntry.Placeholder = AppResource.CurrentAPTTr;
             WantedApttrEntry.Placeholder = AppResource.WantedAPPTr;
