@@ -14,8 +14,6 @@ namespace SmartDose
 
             // Setting default values
             ClearValues();
-            
-            InfoToolBarButton.IconImageSource = "outline_info_white_18dp.png";
 
             // Localization 
             ClearButton.Text = AppResource.Clear;
@@ -69,10 +67,6 @@ namespace SmartDose
         private void ClearButton_OnClicked(object sender, EventArgs e)
         {
             ClearValues();
-        }
-        private async void InfoToolBarButton_OnClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new AboutUs());
         }
     }
 }

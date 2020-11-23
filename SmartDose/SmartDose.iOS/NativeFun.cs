@@ -8,16 +8,21 @@ namespace SmartDose.iOS
 {
     public class NativeFun : INativeFun
     {
+        const double LONG_DELAY = 3.5;
         private const double SHORT_DELAY = 2.0;
         private NSTimer alertDelay;
         
-        private UIAlertController alert; 
-        
+        private UIAlertController alert;
         public void ShortAlert(string message)
         {
             ShowAlert(message, SHORT_DELAY);
         }
-        
+
+        public void LongtAlert(string message)
+        {
+            ShowAlert(message, LONG_DELAY);
+        }
+
         void ShowAlert(string message, double seconds)
         {
             alertDelay = NSTimer.CreateScheduledTimer(seconds, (obj) =>

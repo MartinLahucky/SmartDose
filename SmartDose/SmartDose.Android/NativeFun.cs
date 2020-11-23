@@ -13,5 +13,10 @@ namespace SmartDose.Android
         {
             Toast.MakeText(AndroidApp.Context, message, ToastLength.Short).Show();
         }
+
+        public void LongtAlert(string message)
+        {
+            Toast.MakeText(AndroidApp.Context, message, ToastLength.Long).Show();
+        }
     }
 }

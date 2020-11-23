@@ -270,6 +270,15 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Stiskněte znovu zpět pro ukončení aplikace.
+        /// </summary>
+        internal static string WarningExit {
+            get {
+                return ResourceManager.GetString("WarningExit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Váha.
         /// </summary>
         internal static string Weight {

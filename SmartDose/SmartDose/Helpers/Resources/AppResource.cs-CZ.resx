@@ -92,4 +92,7 @@ Hlavní programátor: Martin Lahučký</value>
     <data name="AboutApp" xml:space="preserve">
         <value>O aplikaci</value>
     </data>
+    <data name="WarningExit" xml:space="preserve">
+        <value>Stiskněte znovu zpět pro ukončení aplikace</value>
+    </data>
 </root>

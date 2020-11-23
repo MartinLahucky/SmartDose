@@ -342,6 +342,15 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Press back again to exit.
+        /// </summary>
+        internal static string WarningExit {
+            get {
+                return ResourceManager.GetString("WarningExit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Weight.
         /// </summary>
         internal static string Weight {

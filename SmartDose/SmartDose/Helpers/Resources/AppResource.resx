@@ -116,4 +116,7 @@ Chief programmer: Martin Lahučký</value>
     <data name="AboutApp" xml:space="preserve">
         <value>About app</value>
     </data>
+    <data name="WarningExit" xml:space="preserve">
+        <value>Press back again to exit</value>
+    </data>
 </root>
