@@ -97,7 +97,7 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Doktorka: Iveta Martínková
+        ///   Looks up a localized string similar to Medička: Iveta Martínková
         ///Matematické vzorce a design: Jan Řehoř
         ///Hlavní programátor: Martin Lahučký.
         /// </summary>

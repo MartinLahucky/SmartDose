@@ -85,7 +85,7 @@
         <value>Tato aplikace byla vytvořena, aby ulehčila práci zdravotnickému i lékařskému personálu. Je určena pro výpočet úvodní rychlosti infuze při heparinizaci a následné úpravy rychlosti dle aPPTr, případně pro podání bolusové dávky dle aPTTr. Dále slouží jako kalkulačka pro výpočet podání krátkodobého rychle působícího inzulinu u pacientů s nestabilní glykémií. Aplikace funguje plně offline.</value>
     </data>
     <data name="AboutUsDescription" xml:space="preserve">
-        <value>Doktorka: Iveta Martínková
+        <value>Medička: Iveta Martínková
 Matematické vzorce a design: Jan Řehoř
 Hlavní programátor: Martin Lahučký</value>
     </data>
