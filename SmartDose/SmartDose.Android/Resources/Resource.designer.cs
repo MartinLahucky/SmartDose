@@ -9370,19 +9370,22 @@ namespace SmartDose.Android
 			public const int notify_panel_notification_icon_bg = 2131165526;
 			
 			// aapt resource value: 0x7F070157
-			public const int rate = 2131165527;
+			public const int outline_info_white_18dp = 2131165527;
 			
 			// aapt resource value: 0x7F070158
-			public const int splash_screen = 2131165528;
+			public const int rate = 2131165528;
 			
 			// aapt resource value: 0x7F070159
-			public const int tooltip_frame_dark = 2131165529;
+			public const int splash_screen = 2131165529;
 			
 			// aapt resource value: 0x7F07015A
-			public const int tooltip_frame_light = 2131165530;
+			public const int tooltip_frame_dark = 2131165530;
 			
 			// aapt resource value: 0x7F07015B
-			public const int weight = 2131165531;
+			public const int tooltip_frame_light = 2131165531;
+			
+			// aapt resource value: 0x7F07015C
+			public const int weight = 2131165532;
 			
 			static Drawable()
 			{

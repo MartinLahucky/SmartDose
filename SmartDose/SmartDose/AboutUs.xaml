@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartDose.AboutUs">
+    <ContentPage.Resources>
+        <StyleSheet Source="Helpers/Styles/Components.css"/>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Frame Margin="30,20,30,20" HasShadow="False" CornerRadius="15" StyleClass="AboutFrame">
+                    <StackLayout>
+                        <Label x:Name="AboutProjectLabelStatic" Margin="0,0,0,10" FontSize="20" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+                        <Label x:Name="AboutProjectLabel" VerticalTextAlignment="Center" FontSize="15" HorizontalTextAlignment="Center" />
+                    </StackLayout>
+                </Frame>
+                
+                <Frame Margin="30,20,30,20" HasShadow="False" CornerRadius="15" StyleClass="AboutFrame">
+                    <StackLayout>
+                        <Label x:Name="AboutUsLabelStatic" Margin="0,0,0,10" FontSize="20" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+                        <Label x:Name="AboutUsLabel" VerticalTextAlignment="Center" FontSize="15" HorizontalTextAlignment="Center" />
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

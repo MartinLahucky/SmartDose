@@ -61,6 +61,53 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to About app.
+        /// </summary>
+        internal static string AboutApp {
+            get {
+                return ResourceManager.GetString("AboutApp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to About Project.
+        /// </summary>
+        internal static string AboutProject {
+            get {
+                return ResourceManager.GetString("AboutProject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The projected started at Smart Health Hackathon 2020. .
+        /// </summary>
+        internal static string AboutProjectDescription {
+            get {
+                return ResourceManager.GetString("AboutProjectDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to About Team.
+        /// </summary>
+        internal static string AboutUs {
+            get {
+                return ResourceManager.GetString("AboutUs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Medic: Iveta Martínková
+        ///Mathamtics and design: Jan Řehoř
+        ///Chief programmer: Martin Lahučký.
+        /// </summary>
+        internal static string AboutUsDescription {
+            get {
+                return ResourceManager.GetString("AboutUsDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bolus:.
         /// </summary>
         internal static string Bolus {

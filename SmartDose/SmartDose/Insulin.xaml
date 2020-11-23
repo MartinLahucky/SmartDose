@@ -3,6 +3,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SmartDose.Insulin">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="InfoToolBarButton" Order="Primary" Priority="1" Clicked="InfoToolBarButton_OnClicked" />
+    </ContentPage.ToolbarItems>
+    
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Margin="0,15,0,0">

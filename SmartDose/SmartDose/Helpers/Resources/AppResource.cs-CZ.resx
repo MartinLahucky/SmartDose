@@ -57,9 +57,6 @@
     <data name="Rate" xml:space="preserve">
         <value>Rychlost dávkování:</value>
     </data>
-    <data name="Bolus" xml:space="preserve">
-        <value>Bolus:</value>
-    </data>
     <data name="DailyDose" xml:space="preserve">
         <value>Denní dávka</value>
     </data>
@@ -77,5 +74,22 @@
     </data>
     <data name="Clear" xml:space="preserve">
         <value>Vymazat</value>
+    </data>
+    <data name="AboutProject" xml:space="preserve">
+        <value>O Projektu</value>
+    </data>
+    <data name="AboutUs" xml:space="preserve">
+        <value>O týmu</value>
+    </data>
+    <data name="AboutProjectDescription" xml:space="preserve">
+        <value>Tento projekt vzniknul na Smart Health Hackathon 2020.</value>
+    </data>
+    <data name="AboutUsDescription" xml:space="preserve">
+        <value>Doktorka: Iveta Martínková
+Matematické vzorce a design: Jan Řehoř
+Hlavní programátor: Martin Lahučký</value>
+    </data>
+    <data name="AboutApp" xml:space="preserve">
+        <value>O aplikaci</value>
     </data>
 </root>

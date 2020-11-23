@@ -87,6 +87,7 @@
     <AndroidResource Include="Resources\drawable\glutose.png" />
     <AndroidResource Include="Resources\drawable\icon.png" />
     <AndroidResource Include="Resources\drawable\logo.png" />
+    <AndroidResource Include="Resources\drawable\outline_info_white_18dp.png" />
     <AndroidResource Include="Resources\drawable\rate.png" />
     <AndroidResource Include="Resources\drawable\splash_screen.xml" />
     <AndroidResource Include="Resources\drawable\weight.png" />

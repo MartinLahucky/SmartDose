@@ -99,4 +99,21 @@
     <data name="Clear" xml:space="preserve">
         <value>Clear</value>
     </data>
+    <data name="AboutProject" xml:space="preserve">
+        <value>About Project</value>
+    </data>
+    <data name="AboutProjectDescription" xml:space="preserve">
+        <value>The projected started at Smart Health Hackathon 2020. </value>
+    </data>
+    <data name="AboutUsDescription" xml:space="preserve">
+        <value>Medic: Iveta Martínková
+Mathamtics and design: Jan Řehoř
+Chief programmer: Martin Lahučký</value>
+    </data>
+    <data name="AboutUs" xml:space="preserve">
+        <value>About Team</value>
+    </data>
+    <data name="AboutApp" xml:space="preserve">
+        <value>About app</value>
+    </data>
 </root>
