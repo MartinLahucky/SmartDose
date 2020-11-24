@@ -64,10 +64,10 @@
         <value>Sacharidy v jídle</value>
     </data>
     <data name="CurrentGlucose" xml:space="preserve">
-        <value>Aktuální glukóza</value>
+        <value>Aktuální glykémie</value>
     </data>
     <data name="WantedGlucose" xml:space="preserve">
-        <value>Cílová glukóza</value>
+        <value>Cílová glykémie</value>
     </data>
     <data name="ChangeOfRate" xml:space="preserve">
         <value>Změna rychlosti</value>

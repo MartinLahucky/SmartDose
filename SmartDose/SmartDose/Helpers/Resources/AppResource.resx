@@ -88,10 +88,10 @@
         <value>Carbs in meal</value>
     </data>
     <data name="CurrentGlucose" xml:space="preserve">
-        <value>Current glucose</value>
+        <value>Current glycemia</value>
     </data>
     <data name="WantedGlucose" xml:space="preserve">
-        <value>Targeted glucose</value>
+        <value>Targeted glycemia</value>
     </data>
     <data name="ChangeOfRate" xml:space="preserve">
         <value>Change of rate</value>

@@ -153,7 +153,7 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Aktuální glukóza.
+        ///   Looks up a localized string similar to Aktuální glykémie.
         /// </summary>
         internal static string CurrentGlucose {
             get {
@@ -261,7 +261,7 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cílová glukóza.
+        ///   Looks up a localized string similar to Cílová glykémie.
         /// </summary>
         internal static string WantedGlucose {
             get {

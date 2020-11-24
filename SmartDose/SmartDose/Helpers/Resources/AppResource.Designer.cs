@@ -162,7 +162,7 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Current glucose.
+        ///   Looks up a localized string similar to Current glycemia.
         /// </summary>
         internal static string CurrentGlucose {
             get {
@@ -333,7 +333,7 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Targeted glucose.
+        ///   Looks up a localized string similar to Targeted glycemia.
         /// </summary>
         internal static string WantedGlucose {
             get {
