@@ -104,12 +104,11 @@ namespace SmartDose
                 }
                 else
                 {
-                    for (int i = 0; i < hapArray.Length - 1; i++)
+                    for (; id < hapArray.Length - 1; id++)
                     {
-                        if (currentAttr > hapArray[i].Aptt && currentAttr <= hapArray[i + 1].Aptt)
+                        if (currentAttr > hapArray[id].Aptt && currentAttr <= hapArray[id + 1].Aptt)
                         {
-                            id = i;
-                            bolus = hapArray[i + 1].Bolus;
+                            bolus = hapArray[id + 1].Bolus;
                         }
                     }
                 }
