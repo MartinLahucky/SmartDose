@@ -234,15 +234,6 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Number of units.
-        /// </summary>
-        internal static string NumberOfUnits {
-            get {
-                return ResourceManager.GetString("NumberOfUnits", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Rate: .
         /// </summary>
         internal static string Rate {
@@ -315,20 +306,20 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to Usage.
         /// </summary>
-        internal static string Volume {
+        internal static string Usage {
             get {
-                return ResourceManager.GetString("Volume", resourceCulture);
+                return ResourceManager.GetString("Usage", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Targeted aPPTr.
+        ///   Looks up a localized string similar to The infusion concentration is set at 25000u in 500ml. If necessary, it can be set to another value. The target aPTTr is set in the range of 1.5-2.3. Within this range, a possible individual adjustment according to the specific target aPTTr is possible. The target blood glucose is set to 6 mmol / l, or it can be set individually..
         /// </summary>
-        internal static string WantedAPPTr {
+        internal static string UsageDescription {
             get {
-                return ResourceManager.GetString("WantedAPPTr", resourceCulture);
+                return ResourceManager.GetString("UsageDescription", resourceCulture);
             }
         }
         

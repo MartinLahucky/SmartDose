@@ -216,15 +216,6 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Počet jednotek.
-        /// </summary>
-        internal static string NumberOfUnits {
-            get {
-                return ResourceManager.GetString("NumberOfUnits", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Rychlost dávkování:.
         /// </summary>
         internal static string Rate {
@@ -243,20 +234,20 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Objem.
+        ///   Looks up a localized string similar to Použítí.
         /// </summary>
-        internal static string Volume {
+        internal static string Usage {
             get {
-                return ResourceManager.GetString("Volume", resourceCulture);
+                return ResourceManager.GetString("Usage", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to    Cílová aPTTr    .
+        ///   Looks up a localized string similar to Koncentrace infuze je nastavena na 25000j v 500ml. V případě potřeby lze nastavit na jinou hodnotu. Cílové aPTTr je nastaveno v rozmezí 1,5-2,3. V tomto rozmezí je možná případná individuální úprava dle konkrétního cílového aPTTr. Cílová glykémie je nastavena na 6mmol/l, případně je možné ji individuálně nastavit..
         /// </summary>
-        internal static string WantedAPPTr {
+        internal static string UsageDescription {
             get {
-                return ResourceManager.GetString("WantedAPPTr", resourceCulture);
+                return ResourceManager.GetString("UsageDescription", resourceCulture);
             }
         }
         

@@ -50,13 +50,6 @@
                                                         FontSize="20"
                                                         HorizontalOptions="CenterAndExpand"
                                                         HorizontalTextAlignment="Center"/>
-                             
-                                                 <Entry x:Name="WantedApttrEntry"
-                                                        Margin="0,-10,0,0"
-                                                        Keyboard="Numeric"
-                                                        FontSize="20"
-                                                        HorizontalOptions="CenterAndExpand"
-                                                        HorizontalTextAlignment="Center"/>
                                           </StackLayout>                        
                                    </Frame>
                             </Frame>

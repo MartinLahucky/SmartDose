@@ -19,10 +19,18 @@
                 
                 <Frame Margin="30,20,30,20" HasShadow="False" CornerRadius="15" StyleClass="AboutFrame">
                     <StackLayout>
+                        <Label x:Name="UsageLabelStatic" Margin="0,0,0,10" FontSize="20" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+                        <Label x:Name="UsageLabel" VerticalTextAlignment="Center" FontSize="15" HorizontalTextAlignment="Center" />
+                    </StackLayout>
+                </Frame>
+                
+                <Frame Margin="30,20,30,20" HasShadow="False" CornerRadius="15" StyleClass="AboutFrame">
+                    <StackLayout>
                         <Label x:Name="AboutUsLabelStatic" Margin="0,0,0,10" FontSize="20" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
                         <Label x:Name="AboutUsLabel" VerticalTextAlignment="Center" FontSize="15" HorizontalTextAlignment="Center" />
                     </StackLayout>
                 </Frame>
+                
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

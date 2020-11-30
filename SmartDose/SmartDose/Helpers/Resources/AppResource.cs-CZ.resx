@@ -24,17 +24,8 @@
     <data name="CurrentAPTTr" xml:space="preserve">
         <value>Současná aPTTr</value>
     </data>
-    <data name="Volume" xml:space="preserve">
-        <value>Objem</value>
-    </data>
     <data name="CurrentSpeed" xml:space="preserve">
         <value>Rychlost dávkování</value>
-    </data>
-    <data name="NumberOfUnits" xml:space="preserve">
-        <value>Počet jednotek</value>
-    </data>
-    <data name="WantedAPPTr" xml:space="preserve">
-        <value>   Cílová aPTTr    </value>
     </data>
     <data name="Insulin" xml:space="preserve">
         <value>Inzulín</value>
@@ -94,5 +85,11 @@ Hlavní programátor: Martin Lahučký</value>
     </data>
     <data name="WarningExit" xml:space="preserve">
         <value>Stiskněte znovu zpět pro ukončení aplikace</value>
+    </data>
+    <data name="UsageDescription" xml:space="preserve">
+        <value>Koncentrace infuze je nastavena na 25000j v 500ml. V případě potřeby lze nastavit na jinou hodnotu. Cílové aPTTr je nastaveno v rozmezí 1,5-2,3. V tomto rozmezí je možná případná individuální úprava dle konkrétního cílového aPTTr. Cílová glykémie je nastavena na 6mmol/l, případně je možné ji individuálně nastavit.</value>
+    </data>
+    <data name="Usage" xml:space="preserve">
+        <value>Použítí</value>
     </data>
 </root>

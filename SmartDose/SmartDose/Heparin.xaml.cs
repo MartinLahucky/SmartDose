@@ -21,7 +21,6 @@ namespace SmartDose
             SwitchLabel.Text = AppResource.ChangeOfRate;
             WeightEntry.Placeholder = AppResource.Weight;
             CurrentApttrEntry.Placeholder = AppResource.CurrentAPTTr;
-            WantedApttrEntry.Placeholder = AppResource.WantedAPPTr;
             NumberOfUnitsEntry.Placeholder = $"{2500}";
             CurrentRateEntry.Placeholder = AppResource.CurrentSpeed;
             VolumeEntry.Placeholder = $"{50}";
@@ -73,7 +72,7 @@ namespace SmartDose
                             {
                                 int currentRate = int.Parse(CurrentRateEntry.Text);
                                 float currentATTR = float.Parse(CurrentApttrEntry.Text);
-                                if (!Single.IsNaN(currentATTR) && !Single.IsNaN(float.Parse(WantedApttrEntry.Text)))
+                                if (!Single.IsNaN(currentATTR))
                                 {
                                     Calculate(currentRate, weight, currentATTR, numberOfUnits, volume);
                                     break;
@@ -116,7 +115,6 @@ namespace SmartDose
                 BolusValueLabel.Text = $"{Math.Round(weight * bolus / 500) * 500}";
             }
         }
-        
 
         private void FirstCalculationSwitch_OnToggled(object sender, ToggledEventArgs e)
         {
@@ -136,7 +134,6 @@ namespace SmartDose
         {
             // Default values
             WeightEntry.Text = String.Empty;
-            WantedApttrEntry.Text = String.Empty;
             NumberOfUnitsEntry.Text = String.Empty;
             CurrentApttrEntry.Text = String.Empty;
             CurrentRateEntry.Text = String.Empty;

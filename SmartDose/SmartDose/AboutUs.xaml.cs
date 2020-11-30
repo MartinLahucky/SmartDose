@@ -1,3 +1,4 @@
+using System;
 using SmartDose.Helpers.Resources;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -16,6 +17,8 @@ namespace SmartDose
             AboutProjectLabel.Text = AppResource.AboutProjectDescription;
             AboutUsLabelStatic.Text = AppResource.AboutUs;
             AboutUsLabel.Text = AppResource.AboutUsDescription;
+            UsageLabel.Text = AppResource.UsageDescription;
+            UsageLabelStatic.Text = AppResource.Usage;
         }
     }
 }

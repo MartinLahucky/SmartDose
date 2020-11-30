@@ -24,17 +24,8 @@
     <data name="CurrentAPTTr" xml:space="preserve">
         <value>Current aPTTr</value>
     </data>
-    <data name="WantedAPPTr" xml:space="preserve">
-        <value>Targeted aPPTr</value>
-    </data>
     <data name="CurrentSpeed" xml:space="preserve">
         <value>Current speed</value>
-    </data>
-    <data name="NumberOfUnits" xml:space="preserve">
-        <value>Number of units</value>
-    </data>
-    <data name="Volume" xml:space="preserve">
-        <value>Volume</value>
     </data>
     <data name="Heparin" xml:space="preserve">
         <value>Heparin</value>
@@ -118,5 +109,11 @@ Chief programmer: Martin Lahučký</value>
     </data>
     <data name="WarningExit" xml:space="preserve">
         <value>Press back again to exit</value>
+    </data>
+    <data name="Usage" xml:space="preserve">
+        <value>Usage</value>
+    </data>
+    <data name="UsageDescription" xml:space="preserve">
+        <value>The infusion concentration is set at 25000u in 500ml. If necessary, it can be set to another value. The target aPTTr is set in the range of 1.5-2.3. Within this range, a possible individual adjustment according to the specific target aPTTr is possible. The target blood glucose is set to 6 mmol / l, or it can be set individually.</value>
     </data>
 </root>
