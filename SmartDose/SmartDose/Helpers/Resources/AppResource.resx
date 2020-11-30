@@ -22,10 +22,10 @@
         <value>Weight</value>
     </data>
     <data name="CurrentAPTTr" xml:space="preserve">
-        <value>Current APTTr</value>
+        <value>Current aPTTr</value>
     </data>
     <data name="WantedAPPTr" xml:space="preserve">
-        <value>Targeted APPTr</value>
+        <value>Targeted aPPTr</value>
     </data>
     <data name="CurrentSpeed" xml:space="preserve">
         <value>Current speed</value>

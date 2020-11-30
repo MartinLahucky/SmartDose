@@ -153,7 +153,7 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Current APTTr.
+        ///   Looks up a localized string similar to Current aPTTr.
         /// </summary>
         internal static string CurrentAPTTr {
             get {
@@ -324,7 +324,7 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Targeted APPTr.
+        ///   Looks up a localized string similar to Targeted aPPTr.
         /// </summary>
         internal static string WantedAPPTr {
             get {

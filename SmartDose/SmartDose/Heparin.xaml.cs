@@ -38,7 +38,7 @@ namespace SmartDose
 
         private void CalculateButton_OnClicked(object sender, EventArgs e)
         {
-            float weight;                        // Weight, Current APTTR, Current Rate,
+            float weight;                                     // Weight, Current APTTR, Current Rate,
             int numberOfUnits, volume;                        // Current Rate
             
             weight = float.Parse(WeightEntry.Text);

@@ -22,7 +22,7 @@
         <value>Váha</value>
     </data>
     <data name="CurrentAPTTr" xml:space="preserve">
-        <value>Současná srážlivost</value>
+        <value>Současná aPTTr</value>
     </data>
     <data name="Volume" xml:space="preserve">
         <value>Objem</value>
@@ -34,7 +34,7 @@
         <value>Počet jednotek</value>
     </data>
     <data name="WantedAPPTr" xml:space="preserve">
-        <value>   Cílová srážlivost   </value>
+        <value>   Cílová aPTTr    </value>
     </data>
     <data name="Insulin" xml:space="preserve">
         <value>Inzulín</value>

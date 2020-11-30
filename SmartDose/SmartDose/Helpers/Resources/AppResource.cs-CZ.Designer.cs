@@ -144,7 +144,7 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Současná srážlivost.
+        ///   Looks up a localized string similar to Současná aPTTr.
         /// </summary>
         internal static string CurrentAPTTr {
             get {
@@ -252,7 +252,7 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to    Cílová srážlivost   .
+        ///   Looks up a localized string similar to    Cílová aPTTr    .
         /// </summary>
         internal static string WantedAPPTr {
             get {
