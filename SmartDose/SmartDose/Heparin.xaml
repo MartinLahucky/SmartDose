@@ -89,14 +89,16 @@
                                                         Keyboard="Numeric"
                                                         FontSize="17"
                                                         HorizontalOptions="CenterAndExpand"
-                                                        HorizontalTextAlignment="Center"/>
+                                                        HorizontalTextAlignment="Center"
+                                                        WidthRequest="70"/>
                                                  <Label x:Name="NumberOfUnitsUnit" VerticalTextAlignment="Center" FontSize="20"/>
                                                  <Label Text=":" VerticalTextAlignment="Center" FontSize="25"/>
                                                  <Entry x:Name="VolumeEntry"
                                                         Keyboard="Numeric"
                                                         FontSize="17"
                                                         HorizontalOptions="CenterAndExpand"
-                                                        HorizontalTextAlignment="Center"/>
+                                                        HorizontalTextAlignment="Center"
+                                                        WidthRequest="55"/>
                                                  <Label x:Name="VolumeLabel" VerticalTextAlignment="Center" FontSize="20" Margin="0" BackgroundColor="#DDDDDD" Padding="15,0"/>
                                           </StackLayout>
                                    </Frame>
