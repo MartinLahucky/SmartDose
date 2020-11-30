@@ -1,4 +1,3 @@
-using System;
 using SmartDose.Helpers.Resources;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
