@@ -144,7 +144,7 @@ namespace SmartDose.Helpers.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Současná aPTTr.
+        ///   Looks up a localized string similar to Současný aPTTr.
         /// </summary>
         internal static string CurrentAPTTr {
             get {

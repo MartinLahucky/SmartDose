@@ -22,7 +22,7 @@
         <value>Váha</value>
     </data>
     <data name="CurrentAPTTr" xml:space="preserve">
-        <value>Současná aPTTr</value>
+        <value>Současný aPTTr</value>
     </data>
     <data name="CurrentSpeed" xml:space="preserve">
         <value>Rychlost dávkování</value>
