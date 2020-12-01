@@ -45,7 +45,7 @@
                                    <Frame BackgroundColor="White" CornerRadius="5" HorizontalOptions="StartAndExpand" Padding="0" Margin="1">
                                           <StackLayout Margin="0">
                                                  <Entry x:Name="CurrentApttrEntry"
-                                                        Margin="0,-5,0,-10"
+                                                        VerticalOptions="EndAndExpand"
                                                         Keyboard="Numeric"
                                                         FontSize="20"
                                                         HorizontalOptions="CenterAndExpand"
@@ -74,7 +74,7 @@
                      
                      <StackLayout Orientation="Horizontal">
                             <Image Source="concentration.png" Aspect="AspectFit" HeightRequest="60" Margin="10,0,20,0"/>
-                            <!-- number of units -->
+                            <!-- number of units  -->
                             <Frame BackgroundColor="#444444" Padding="0" CornerRadius="5" Margin="0,5,0,0">
                                    <Frame BackgroundColor="White" CornerRadius="5" HorizontalOptions="StartAndExpand" Padding="0" Margin="1">
                                           <StackLayout Orientation="Horizontal">  
@@ -84,9 +84,15 @@
                                                         HorizontalOptions="CenterAndExpand"
                                                         HorizontalTextAlignment="Center"
                                                         WidthRequest="70"/>
-                                                 <Label x:Name="NumberOfUnitsUnit" VerticalTextAlignment="Center" FontSize="20"/>
-                                                 <Label Text=":" VerticalTextAlignment="Center" FontSize="25"/>
-                                                 <Entry x:Name="VolumeEntry"
+                                                 <Label x:Name="NumberOfUnitsUnit" VerticalTextAlignment="Center" FontSize="20" Margin="0" BackgroundColor="#DDDDDD" Padding="15,0"/>
+                                          </StackLayout>
+                                   </Frame>
+                            </Frame>
+                            <Label Text=":" VerticalTextAlignment="Center" FontSize="40"/>
+                            <Frame BackgroundColor="#444444" Padding="0" CornerRadius="5" Margin="0,5,0,0">
+                                   <Frame BackgroundColor="White" CornerRadius="5" HorizontalOptions="StartAndExpand" Padding="0" Margin="1">
+                                          <StackLayout Orientation="Horizontal">  
+                                                 <Entry x:Name="VolumeEntry"						 
                                                         Keyboard="Numeric"
                                                         FontSize="17"
                                                         HorizontalOptions="CenterAndExpand"
