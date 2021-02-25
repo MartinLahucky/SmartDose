@@ -6,5 +6,5 @@
     <TabbedPage.ToolbarItems>
         <ToolbarItem x:Name="InfoToolBarButton" Order="Primary" Priority="1" Clicked="InfoToolBarButton_OnClicked" />
     </TabbedPage.ToolbarItems>
-    
+
 </TabbedPage>

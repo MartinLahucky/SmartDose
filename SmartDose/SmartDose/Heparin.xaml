@@ -4,141 +4,167 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SmartDose.Heparin">
 
-<ContentPage.Content>
-       <ScrollView>
-              <StackLayout>
-                     <StackLayout Orientation="Horizontal">
-                            <!-- switch for the first calculation -->
-                            <Frame BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="End" Padding="1" Margin="5" >
-                                   <StackLayout Orientation="Horizontal">    
-                                          <Label x:Name="SwitchLabel" VerticalTextAlignment="Center" Margin="10,0,0,0" FontSize="20"/>
-                                          <Switch x:Name="FirstCalculationSwitch"
-                                                  Toggled="FirstCalculationSwitch_OnToggled"
-                                                  ThumbColor="#E2001A"
-                                                  HorizontalOptions="CenterAndExpand"/>
-                                   </StackLayout>
-                            </Frame>
-                     </StackLayout>
-                     
-                     <StackLayout Orientation="Horizontal">
-                            <Image Source="weight.png" Aspect="AspectFit" HeightRequest="60" Margin="10,0,20,0"/>
-                            <!-- weight card -->
-                            <Frame BackgroundColor="#444444" Padding="0" CornerRadius="5" Margin="0,5,0,0">
-                                   <Frame BackgroundColor="White" CornerRadius="5" HorizontalOptions="StartAndExpand" Padding="0" Margin="1">
-                                          <StackLayout Orientation="Horizontal">             
-                                                 <Entry x:Name="WeightEntry"
-                                                        Keyboard="Numeric"
-                                                        FontSize="20"
-                                                        HorizontalOptions="CenterAndExpand"
-                                                        HorizontalTextAlignment="Center"/>
-                                                 <Label x:Name="WeightUnit" FontSize="20" BackgroundColor="#DDDDDD" VerticalTextAlignment="Center" Padding="15,0"/>
-                                          </StackLayout>
-                                   </Frame>
-                            </Frame>
-                            
-                     </StackLayout>
-                             
-                     <StackLayout Orientation="Horizontal">
-                            <Image x:Name="CurrentApttrImage" Source="apttr.png" Aspect="AspectFill" HeightRequest="60" Margin="10,0,20,0"/>
-                            <!-- current apttr -->
-                            <Frame x:Name="CurrentApttrFrame" BackgroundColor="#444444" Padding="0" CornerRadius="5" Margin="0,5,0,0">
-                                   <Frame BackgroundColor="White" CornerRadius="5" HorizontalOptions="StartAndExpand" Padding="0" Margin="1">
-                                          <StackLayout Margin="0">
-                                                 <Entry x:Name="CurrentApttrEntry"
-                                                        VerticalOptions="EndAndExpand"
-                                                        Keyboard="Numeric"
-                                                        FontSize="20"
-                                                        HorizontalOptions="CenterAndExpand"
-                                                        HorizontalTextAlignment="Center"/>
-                                          </StackLayout>                        
-                                   </Frame>
-                            </Frame>
-                     </StackLayout>
-                     
-                     <StackLayout Orientation="Horizontal">
-                            <Image x:Name="CurrentRateImage" Source="rate.png" Aspect="AspectFit" HeightRequest="60" Margin="10,0,20,0"/>
-                            <!-- current speed -->
-                            <Frame x:Name="CurrentRateFrame" BackgroundColor="#444444" Padding="0" CornerRadius="5" Margin="0,5,0,0">
-                                   <Frame BackgroundColor="White" CornerRadius="5" HorizontalOptions="StartAndExpand" Padding="0" Margin="1">
-                                          <StackLayout Orientation="Horizontal">  
-                                                 <Entry x:Name="CurrentRateEntry"
-                                                        Keyboard="Numeric"
-                                                        FontSize="20"
-                                                        HorizontalOptions="CenterAndExpand"
-                                                        HorizontalTextAlignment="Center"/>
-                                                 <Label x:Name="CurrentRateUnit" FontSize="20" BackgroundColor="#DDDDDD" VerticalTextAlignment="Center" Padding="15,0"/>
-                                          </StackLayout>
-                                   </Frame>
-                            </Frame>
-                     </StackLayout>
-                     
-                     <StackLayout Orientation="Horizontal">
-                            <Image Source="concentration.png" Aspect="AspectFit" HeightRequest="60" Margin="10,0,20,0"/>
-                            <!-- number of units  -->
-                            <Frame BackgroundColor="#444444" Padding="0" CornerRadius="5" Margin="0,5,0,0">
-                                   <Frame BackgroundColor="White" CornerRadius="5" HorizontalOptions="StartAndExpand" Padding="0" Margin="1">
-                                          <StackLayout Orientation="Horizontal">  
-                                                 <Entry x:Name="NumberOfUnitsEntry"
-                                                        Keyboard="Numeric"
-                                                        FontSize="17"
-                                                        HorizontalOptions="CenterAndExpand"
-                                                        HorizontalTextAlignment="Center"
-                                                        WidthRequest="70"/>
-                                                 <Label x:Name="NumberOfUnitsUnit" VerticalTextAlignment="Center" FontSize="20" Margin="0" BackgroundColor="#DDDDDD" Padding="15,0"/>
-                                          </StackLayout>
-                                   </Frame>
-                            </Frame>
-                            <Label Text=":" VerticalTextAlignment="Center" FontSize="40"/>
-                            <Frame BackgroundColor="#444444" Padding="0" CornerRadius="5" Margin="0,5,0,0">
-                                   <Frame BackgroundColor="White" CornerRadius="5" HorizontalOptions="StartAndExpand" Padding="0" Margin="1">
-                                          <StackLayout Orientation="Horizontal">  
-                                                 <Entry x:Name="VolumeEntry"						 
-                                                        Keyboard="Numeric"
-                                                        FontSize="17"
-                                                        HorizontalOptions="CenterAndExpand"
-                                                        HorizontalTextAlignment="Center"
-                                                        WidthRequest="55"/>
-                                                 <Label x:Name="VolumeLabel" VerticalTextAlignment="Center" FontSize="20" Margin="0" BackgroundColor="#DDDDDD" Padding="15,0"/>
-                                          </StackLayout>
-                                   </Frame>
-                            </Frame>
-                     </StackLayout>
-                     
-                     <!-- Results -->
-                     <!-- Rate -->
-                     <StackLayout HorizontalOptions="Start" Margin="10,0,0,0">
-                            <Frame BackgroundColor="#E2001A" CornerRadius="5" Padding="5" Margin="5">
-                                   <Frame BackgroundColor="White" CornerRadius="5" HorizontalOptions="StartAndExpand" Padding="0" Margin="1">
-                                          <StackLayout Orientation="Horizontal" Padding="0">
-                                                 <Label x:Name="RateTitleLabel" FontSize="15" VerticalTextAlignment="Center" Margin="3,0,0,0"/>
-                                                 <Label x:Name="RateValueLabel" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" Margin="10"/>   
-                                                 <Label x:Name = "RateUnit" Margin="0" FontSize="20" BackgroundColor="#DDDDDD" VerticalTextAlignment="Center" Padding="15,0"/>
-                                          </StackLayout>
-                                   </Frame>
-                            </Frame>
-                     </StackLayout>
-                     <!-- Bolus -->
-                     <StackLayout Orientation="Horizontal">
-                            <StackLayout HorizontalOptions="Start" Margin="10,0,0,0">
-                                   <Frame x:Name = "BolusFrame" BackgroundColor="#E2001A" CornerRadius="5" Padding="5" Margin="5">
-                                          <Frame BackgroundColor="White" CornerRadius="5" HorizontalOptions="StartAndExpand" Padding="0" Margin="1">
-                                                 <StackLayout Orientation="Horizontal" Padding="0">
-                                                        <Label x:Name="BolusTitleLabel" FontSize="15" VerticalTextAlignment="Center" Margin="3,0,0,0"/>
-                                                        <Label x:Name="BolusValueLabel" FontSize="20" HorizontalOptions="CenterAndExpand" VerticalTextAlignment="Center" Margin="10"/>   
-                                                        <Label x:Name = "BolusUnit" Margin="0" FontSize="20" BackgroundColor="#DDDDDD" VerticalTextAlignment="Center" Padding="15,0"/>
-                                                 </StackLayout>
-                                          </Frame>
-                                   </Frame>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <!-- switch for the first calculation -->
+                    <Frame BackgroundColor="White" BorderColor="#444444" CornerRadius="5" HorizontalOptions="End"
+                           Padding="1" Margin="5">
+                        <StackLayout Orientation="Horizontal">
+                            <Label x:Name="SwitchLabel" VerticalTextAlignment="Center" Margin="10,0,0,0" FontSize="20" />
+                            <Switch x:Name="FirstCalculationSwitch"
+                                    Toggled="FirstCalculationSwitch_OnToggled"
+                                    ThumbColor="#E2001A"
+                                    HorizontalOptions="CenterAndExpand" />
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="weight.png" Aspect="AspectFit" HeightRequest="60" Margin="10,0,20,0" />
+                    <!-- weight card -->
+                    <Frame BackgroundColor="#444444" Padding="0" CornerRadius="5" Margin="0,5,0,0">
+                        <Frame BackgroundColor="White" CornerRadius="5" HorizontalOptions="StartAndExpand" Padding="0"
+                               Margin="1">
+                            <StackLayout Orientation="Horizontal">
+                                <Entry x:Name="WeightEntry"
+                                       Keyboard="Numeric"
+                                       FontSize="20"
+                                       HorizontalOptions="CenterAndExpand"
+                                       HorizontalTextAlignment="Center" />
+                                <Label x:Name="WeightUnit" FontSize="20" BackgroundColor="#DDDDDD"
+                                       VerticalTextAlignment="Center" Padding="15,0" />
                             </StackLayout>
-                     </StackLayout>       
-                            
-                     
-                     <StackLayout Orientation="Horizontal">
-                            <Button x:Name="ClearButton" BackgroundColor="#E2001A" CornerRadius="20" Margin="10,10,50,20" HorizontalOptions="Start" VerticalOptions="Center" TextColor="White" Clicked="ClearButton_OnClicked"/>
-                            <Button x:Name="CalculateButton" CornerRadius="20" Margin="20,5,20,15" Padding="40,0,40,0" BackgroundColor="#222222"  TextColor="White" VerticalOptions="Center" Clicked="CalculateButton_OnClicked"/>                            
-                     </StackLayout>
-                     
-              </StackLayout>
-       </ScrollView>
+                        </Frame>
+                    </Frame>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image x:Name="CurrentApttrImage" Source="apttr.png" Aspect="AspectFill" HeightRequest="60"
+                           Margin="10,0,20,0" />
+                    <!-- current apttr -->
+                    <Frame x:Name="CurrentApttrFrame" BackgroundColor="#444444" Padding="0" CornerRadius="5"
+                           Margin="0,5,0,0">
+                        <Frame BackgroundColor="White" CornerRadius="5" HorizontalOptions="StartAndExpand" Padding="0"
+                               Margin="1">
+                            <StackLayout Margin="0">
+                                <Entry x:Name="CurrentApttrEntry"
+                                       VerticalOptions="EndAndExpand"
+                                       Keyboard="Numeric"
+                                       FontSize="20"
+                                       HorizontalOptions="CenterAndExpand"
+                                       HorizontalTextAlignment="Center" />
+                            </StackLayout>
+                        </Frame>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image x:Name="CurrentRateImage" Source="rate.png" Aspect="AspectFit" HeightRequest="60"
+                           Margin="10,0,20,0" />
+                    <!-- current speed -->
+                    <Frame x:Name="CurrentRateFrame" BackgroundColor="#444444" Padding="0" CornerRadius="5"
+                           Margin="0,5,0,0">
+                        <Frame BackgroundColor="White" CornerRadius="5" HorizontalOptions="StartAndExpand" Padding="0"
+                               Margin="1">
+                            <StackLayout Orientation="Horizontal">
+                                <Entry x:Name="CurrentRateEntry"
+                                       Keyboard="Numeric"
+                                       FontSize="20"
+                                       HorizontalOptions="CenterAndExpand"
+                                       HorizontalTextAlignment="Center" />
+                                <Label x:Name="CurrentRateUnit" FontSize="20" BackgroundColor="#DDDDDD"
+                                       VerticalTextAlignment="Center" Padding="15,0" />
+                            </StackLayout>
+                        </Frame>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="concentration.png" Aspect="AspectFit" HeightRequest="60" Margin="10,0,20,0" />
+                    <!-- number of units  -->
+                    <Frame BackgroundColor="#444444" Padding="0" CornerRadius="5" Margin="0,5,0,0">
+                        <Frame BackgroundColor="White" CornerRadius="5" HorizontalOptions="StartAndExpand" Padding="0"
+                               Margin="1">
+                            <StackLayout Orientation="Horizontal">
+                                <Entry x:Name="NumberOfUnitsEntry"
+                                       Keyboard="Numeric"
+                                       FontSize="17"
+                                       HorizontalOptions="CenterAndExpand"
+                                       HorizontalTextAlignment="Center"
+                                       WidthRequest="70" />
+                                <Label x:Name="NumberOfUnitsUnit" VerticalTextAlignment="Center" FontSize="20"
+                                       Margin="0" BackgroundColor="#DDDDDD" Padding="15,0" />
+                            </StackLayout>
+                        </Frame>
+                    </Frame>
+                    <Label Text=":" VerticalTextAlignment="Center" FontSize="40" />
+                    <Frame BackgroundColor="#444444" Padding="0" CornerRadius="5" Margin="0,5,0,0">
+                        <Frame BackgroundColor="White" CornerRadius="5" HorizontalOptions="StartAndExpand" Padding="0"
+                               Margin="1">
+                            <StackLayout Orientation="Horizontal">
+                                <Entry x:Name="VolumeEntry"
+                                       Keyboard="Numeric"
+                                       FontSize="17"
+                                       HorizontalOptions="CenterAndExpand"
+                                       HorizontalTextAlignment="Center"
+                                       WidthRequest="55" />
+                                <Label x:Name="VolumeLabel" VerticalTextAlignment="Center" FontSize="20" Margin="0"
+                                       BackgroundColor="#DDDDDD" Padding="15,0" />
+                            </StackLayout>
+                        </Frame>
+                    </Frame>
+                </StackLayout>
+
+                <!-- Results -->
+                <!-- Rate -->
+                <StackLayout HorizontalOptions="Start" Margin="10,0,0,0">
+                    <Frame BackgroundColor="#E2001A" CornerRadius="5" Padding="5" Margin="5">
+                        <Frame BackgroundColor="White" CornerRadius="5" HorizontalOptions="StartAndExpand" Padding="0"
+                               Margin="1">
+                            <StackLayout Orientation="Horizontal" Padding="0">
+                                <Label x:Name="RateTitleLabel" FontSize="15" VerticalTextAlignment="Center"
+                                       Margin="3,0,0,0" />
+                                <Label x:Name="RateValueLabel" FontSize="20" HorizontalOptions="CenterAndExpand"
+                                       VerticalTextAlignment="Center" Margin="10" />
+                                <Label x:Name="RateUnit" Margin="0" FontSize="20" BackgroundColor="#DDDDDD"
+                                       VerticalTextAlignment="Center" Padding="15,0" />
+                            </StackLayout>
+                        </Frame>
+                    </Frame>
+                </StackLayout>
+                <!-- Bolus -->
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout HorizontalOptions="Start" Margin="10,0,0,0">
+                        <Frame x:Name="BolusFrame" BackgroundColor="#E2001A" CornerRadius="5" Padding="5" Margin="5">
+                            <Frame BackgroundColor="White" CornerRadius="5" HorizontalOptions="StartAndExpand"
+                                   Padding="0" Margin="1">
+                                <StackLayout Orientation="Horizontal" Padding="0">
+                                    <Label x:Name="BolusTitleLabel" FontSize="15" VerticalTextAlignment="Center"
+                                           Margin="3,0,0,0" />
+                                    <Label x:Name="BolusValueLabel" FontSize="20" HorizontalOptions="CenterAndExpand"
+                                           VerticalTextAlignment="Center" Margin="10" />
+                                    <Label x:Name="BolusUnit" Margin="0" FontSize="20" BackgroundColor="#DDDDDD"
+                                           VerticalTextAlignment="Center" Padding="15,0" />
+                                </StackLayout>
+                            </Frame>
+                        </Frame>
+                    </StackLayout>
+                </StackLayout>
+
+
+                <StackLayout Orientation="Horizontal">
+                    <Button x:Name="ClearButton" BackgroundColor="#E2001A" CornerRadius="20" Margin="10,10,50,20"
+                            HorizontalOptions="Start" VerticalOptions="Center" TextColor="White"
+                            Clicked="ClearButton_OnClicked" />
+                    <Button x:Name="CalculateButton" CornerRadius="20" Margin="20,5,20,15" Padding="40,0,40,0"
+                            BackgroundColor="#222222" TextColor="White" VerticalOptions="Center"
+                            Clicked="CalculateButton_OnClicked" />
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -42,7 +42,8 @@ namespace SmartDose
                 try
                 {
                     wantedGlucose = int.Parse(WantedGlucoseEntry.Text);
-                    DoseValueLabel.Text = $"{dailyDose * (currentGlucose - wantedGlucose) / 110 + carbsInMeal * dailyDose / 350}";
+                    DoseValueLabel.Text =
+                        $"{dailyDose * (currentGlucose - wantedGlucose) / 110 + carbsInMeal * dailyDose / 350}";
                 }
                 catch
                 {
@@ -54,14 +55,15 @@ namespace SmartDose
                 DependencyService.Get<INativeFun>().ShortAlert(AppResource.NumberAlert);
             }
         }
+
         private void ClearValues()
         {
             // Default values
-            DailyDoseEntry.Text = String.Empty;
-            CarbsInMealEntry.Text = String.Empty;
-            WantedGlucoseEntry.Text = String.Empty;
-            CurrentGlucoseEntry.Text = String.Empty;
-            DoseValueLabel.Text = String.Empty;
+            DailyDoseEntry.Text = string.Empty;
+            CarbsInMealEntry.Text = string.Empty;
+            WantedGlucoseEntry.Text = string.Empty;
+            CurrentGlucoseEntry.Text = string.Empty;
+            DoseValueLabel.Text = string.Empty;
         }
 
         private void ClearButton_OnClicked(object sender, EventArgs e)

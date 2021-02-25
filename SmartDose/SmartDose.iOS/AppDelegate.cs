@@ -23,14 +23,15 @@ namespace SmartDose.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             Forms.Init();
-            
+
             // Database Declaration
             string dbName = "smartdose_db.sqlite";
-            string folderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "..", "Library");
+            string folderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "..",
+                "Library");
             string fullPath = Path.Combine(folderPath, dbName);
-            
+
             LoadApplication(new App(fullPath));
-            
+
 
             return base.FinishedLaunching(app, options);
         }

@@ -11,18 +11,6 @@ namespace SmartDose
         private static DatabaseController database;
         public static string DatabaseLocation = string.Empty;
 
-        public static DatabaseController Database
-        {
-            get
-            {
-                if (database == null)
-                {
-                    database = new DatabaseController();
-                }
-                return database;
-            }
-        }
-        
         public App(string databaseLocation)
         {
             InitializeComponent();
@@ -30,8 +18,17 @@ namespace SmartDose
             DatabaseLocation = databaseLocation;
             MainPage = new NavigationPage(new SwitchPage())
             {
-                BarTextColor = Color.FromHex("#FFFFFF"),
+                BarTextColor = Color.FromHex("#FFFFFF")
             };
+        }
+
+        public static DatabaseController Database
+        {
+            get
+            {
+                if (database == null) database = new DatabaseController();
+                return database;
+            }
         }
 
         protected override void OnStart()
